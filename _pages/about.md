@@ -4,8 +4,7 @@ title: About Me
 permalink: /about/
 ---
 
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
+Hello, I am Shivansh Goel and art of APCSP period 5.
 
 
-
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
+This is the about me page of Shivansh Goel's Fast Pages
