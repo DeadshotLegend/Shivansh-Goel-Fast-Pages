@@ -15,5 +15,3 @@ image: images/marble-goddess.jpg
 - Useufl transporting and using code
 - Help monitor and instantiate content
 
-<img src="images\vscode.png" width="600">
-<img src="images\marble-goddess.jpg" width="600">
