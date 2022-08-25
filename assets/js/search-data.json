@@ -2,6 +2,28 @@
   
     
         "post0": {
+            "title": "Shivansh's personalized page",
+            "content": "Personal Study and Work Pages . Goal for using this page . Useful for connecting notes | Useufl transporting and using code | Help monitor and instantiate content | .",
+            "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/markdown/2022/08/24/secondmarkdown.html",
+            "relUrl": "/markdown/2022/08/24/secondmarkdown.html",
+            "date": " • Aug 24, 2022"
+        }
+        
+    
+  
+    
+        ,"post1": {
+            "title": "This is Shivansh Goel's personalized Studybook for all student courses",
+            "content": "print(&quot;Go to google drive for editing documents&quot;) .",
+            "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/2022/08/24/personalized.html",
+            "relUrl": "/2022/08/24/personalized.html",
+            "date": " • Aug 24, 2022"
+        }
+        
+    
+  
+    
+        ,"post2": {
             "title": "Shivansh Goel's First Python Code and use of Jupyter Notebook",
             "content": "print(&quot;Hello, world!&quot;) . Hello, world! .",
             "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/2022/08/21/ShivanshJupyter.html",
@@ -12,7 +34,7 @@
     
   
     
-        ,"post1": {
+        ,"post3": {
             "title": "Shivansh's first Markdown Post",
             "content": "Shivansh Goel Mark Down Post . Goals For CSP this year: . Become better at coding | Learn the various computer languages | Become better with websites and computers | .",
             "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/markdown/2022/08/21/Shivansh.html",
@@ -38,6 +60,39 @@
   
 
   
+      ,"page2": {
+          "title": "APCSP Vocabulary",
+          "content": "This APCSP Notes: .",
+          "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/b-vocab/",
+          "relUrl": "/b-vocab/",
+          "date": ""
+      }
+      
+  
+
+  
+
+  
+      ,"page4": {
+          "title": "APCSP Notes",
+          "content": "This is the notes for Shivansh Goel: .",
+          "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/notes/",
+          "relUrl": "/notes/",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page5": {
+          "title": "Personalized Study",
+          "content": "Find assingments on these links and edit them here: Link to Canas: https://poway.instructure.com/ Link to myplan: https://launchpad.classlink.com/poway Link to GoogleDrive: https://www.google.com/drive/ .",
+          "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/personalstudy/",
+          "relUrl": "/personalstudy/",
+          "date": ""
+      }
+      
+  
 
   
   
@@ -59,7 +114,7 @@
   
 
   
-      ,"page10": {
+      ,"page13": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/robots.txt",
