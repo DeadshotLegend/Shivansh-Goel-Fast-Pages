@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Caluculus
+title: Calculus
 permalink: /Calc/
 ---
 
