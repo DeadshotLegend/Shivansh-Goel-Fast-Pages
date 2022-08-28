@@ -2,8 +2,8 @@
   
     
         "post0": {
-            "title": "Title",
-            "content": "",
+            "title": "This is the personalized quiz for Week 2 Hacks",
+            "content": "import getpass, sys def question_and_answer(prompt): print(&quot;Question: &quot; + prompt) msg = input() print(&quot;Answer: &quot; + msg) def question_with_response(prompt): print(&quot;Question: &quot; + prompt) msg = input() return msg questions = 7 correct = 0 print(&#39;Hello, &#39; + getpass.getuser() + &quot; running &quot; + sys.executable) print(&quot;You will be asked &quot; + str(questions) + &quot; questions.&quot;) question_and_answer(&quot;Are you ready to take a test?&quot;) rsp = question_with_response(&quot;W&quot;) if rsp == &quot;import&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;What command in this example is used to evaluate a response?&quot;) if rsp == &quot;if&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;Each &#39;if&#39; command contains an &#39;_________&#39; to determine a true or false condition?&quot;) if rsp == &quot;expression&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;What does Jupyter Notebooks use&quot;) if rsp == &quot;python&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;What is the end of the file name of Mark Down Post&quot;) if rsp == &quot;.md&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;What kernel does one need to use to use python&quot;) if rsp == &quot;ipykernel&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;What command in terminal allows one to switch directort&quot;) if rsp == &quot;cd&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) print(getpass.getuser() + &quot; you scored &quot; + str(correct) +&quot;/&quot; + str(questions)) .",
             "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/2022/08/25/personalizedquiz.html",
             "relUrl": "/2022/08/25/personalizedquiz.html",
             "date": " • Aug 25, 2022"
@@ -35,17 +35,6 @@
   
     
         ,"post3": {
-            "title": "This is Shivansh Goel's personalized Studybook for all student courses",
-            "content": "print(&quot;Go to google drive for editing documents&quot;) .",
-            "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/2022/08/24/personalized.html",
-            "relUrl": "/2022/08/24/personalized.html",
-            "date": " • Aug 24, 2022"
-        }
-        
-    
-  
-    
-        ,"post4": {
             "title": "Shivansh Goel's First Python Code and use of Jupyter Notebook",
             "content": "print(&quot;Hello, world!&quot;) . Hello, world! .",
             "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/2022/08/21/ShivanshJupyter.html",
@@ -56,7 +45,7 @@
     
   
     
-        ,"post5": {
+        ,"post4": {
             "title": "Shivansh's first Markdown Post",
             "content": "Shivansh Goel Mark Down Post . Goals For CSP this year: . Become better at coding | Learn the various computer languages | Become better with websites and computers | .",
             "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/markdown/2022/08/21/Shivansh.html",
