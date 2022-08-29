@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -135,8 +135,8 @@ window.onload = wrap_img;
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">getpass</span><span class="o">,</span> <span class="nn">sys</span>
 
 <span class="c1"># method to display question and get user&#39;s answers</span>
-<span class="k">def</span> <span class="nf">question_with_response</span><span class="p">(</span><span class="n">prompt</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Question: &quot;</span> <span class="o">+</span> <span class="n">prompt</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">question_with_response</span><span class="p">(</span><span class="n">prompt</span><span class="p">,</span> <span class="n">qCount</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Question &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">qCount</span><span class="p">)</span>  <span class="o">+</span> <span class="s2">&quot; : &quot;</span> <span class="o">+</span> <span class="n">prompt</span><span class="p">)</span>
     <span class="n">msg</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
     <span class="k">return</span> <span class="n">msg</span>
 
@@ -144,10 +144,10 @@ window.onload = wrap_img;
 <span class="n">questionsDict</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;What command is used to include other functions that were previously developed?&quot;</span><span class="p">:</span> <span class="s2">&quot;import&quot;</span><span class="p">,</span>
     <span class="s2">&quot;What command in this example is used to evaluate a response?&quot;</span><span class="p">:</span> <span class="s2">&quot;if&quot;</span><span class="p">,</span> 
     <span class="s2">&quot;Each &#39;if&#39; command contains an &#39;_________&#39; to determine a true or false condition?&quot;</span><span class="p">:</span> <span class="s2">&quot;expression&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;What does Jupyter Notebooks use&quot;</span><span class="p">:</span> <span class="s2">&quot;python&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;What is the end of the file name of Mark Down Post&quot;</span><span class="p">:</span> <span class="s2">&quot;.md&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;What kernel does one need to use to use python&quot;</span><span class="p">:</span> <span class="s2">&quot;ipykernel&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;What command in terminal allows one to switch directort&quot;</span><span class="p">:</span> <span class="s2">&quot;cd&quot;</span>
+    <span class="s2">&quot;What does Jupyter Notebooks use?&quot;</span><span class="p">:</span> <span class="s2">&quot;python&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;What is the end of the file name of Mark Down Post?&quot;</span><span class="p">:</span> <span class="s2">&quot;.md&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;What kernel does one need to use to use python?&quot;</span><span class="p">:</span> <span class="s2">&quot;ipykernel&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;What command in terminal allows one to switch directory?&quot;</span><span class="p">:</span> <span class="s2">&quot;cd&quot;</span>
 <span class="p">}</span>
 
 <span class="c1"># number of questions as length of the dictionary</span>
@@ -162,9 +162,11 @@ window.onload = wrap_img;
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Are you ready to take a test! Press Enter key to begin. Best of luck :)&quot;</span><span class="p">)</span>
 <span class="nb">input</span><span class="p">()</span>
 
+<span class="n">questionCount</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="c1"># iterate over list of keys from the dictionary. pass dictionary key as question to the question_with_response function</span>
 <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">questionsDict</span><span class="p">:</span>
-    <span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+    <span class="n">questionCount</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">questionCount</span><span class="p">)</span>
     <span class="c1"># compare the value from the dictionary to the user&#39;s input</span>
     <span class="k">if</span> <span class="n">rsp</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="n">questionsDict</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">&quot; is correct! Good Job!&quot;</span><span class="p">)</span>
@@ -185,6 +187,38 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Hello, shivansh running /bin/python3
+You will be asked 7 questions.
+Are you ready to take a test! Press Enter key to begin. Best of luck :)
+Question 1 : What command is used to include other functions that were previously developed?
+import is correct! Good Job!
+Question 2 : What command in this example is used to evaluate a response?
+if is correct! Good Job!
+Question 3 : Each &#39;if&#39; command contains an &#39;_________&#39; to determine a true or false condition?
+expression is correct! Good Job!
+Question 4 : What does Jupyter Notebooks use?
+python is correct! Good Job!
+Question 5 : What is the end of the file name of Mark Down Post?
+.md is correct! Good Job!
+Question 6 : What kernel does one need to use to use python?
+ipykernel is correct! Good Job!
+Question 7 : What command in terminal allows one to switch directory?
+cd is correct! Good Job!
+shivansh you scored 7/7
+Total Percentage: 100.00%
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
