@@ -2,6 +2,17 @@
   
     
         "post0": {
+            "title": "Shivansh's Bash Tutorial Hacks",
+            "content": "",
+            "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/2022/08/28/ShivanshBashTutorial.html",
+            "relUrl": "/2022/08/28/ShivanshBashTutorial.html",
+            "date": " • Aug 28, 2022"
+        }
+        
+    
+  
+    
+        ,"post1": {
             "title": "This is the personalized quiz for Week 2 Hacks",
             "content": "My Hacks . I have removed the repeating questions and anwers with a iterative contruct using dictionaries | Added more questions of my own and also calculated a percentage at the end. | Lastly, I have made the answer check case insensitive. | . import getpass, sys # method to display question and get user&#39;s answers def question_with_response(prompt, qCount): print(&quot;Question &quot; + str(qCount) + &quot; : &quot; + prompt) msg = input() return msg # dictionary to hold questions and answers as key : value pairs questionsDict = {&quot;What command is used to include other functions that were previously developed?&quot;: &quot;import&quot;, &quot;What command in this example is used to evaluate a response?&quot;: &quot;if&quot;, &quot;Each &#39;if&#39; command contains an &#39;_________&#39; to determine a true or false condition?&quot;: &quot;expression&quot;, &quot;What does Jupyter Notebooks use?&quot;: &quot;python&quot;, &quot;What is the end of the file name of Mark Down Post?&quot;: &quot;.md&quot;, &quot;What kernel does one need to use to use python?&quot;: &quot;ipykernel&quot;, &quot;What command in terminal allows one to switch directory?&quot;: &quot;cd&quot; } # number of questions as length of the dictionary questions = len(questionsDict) # set correct to 0 correct = 0 print(&#39;Hello, &#39; + getpass.getuser() + &quot; running &quot; + sys.executable) print(&quot;You will be asked &quot; + str(questions) + &quot; questions.&quot;) print(&quot;Are you ready to take a test! Press Enter key to begin. Best of luck :)&quot;) input() questionCount = 0 # iterate over list of keys from the dictionary. pass dictionary key as question to the question_with_response function for key in questionsDict: questionCount += 1 rsp = question_with_response(key, questionCount) # compare the value from the dictionary to the user&#39;s input if rsp.lower() == questionsDict[key].lower(): print(rsp + &quot; is correct! Good Job!&quot;) correct += 1 else: print(rsp + &quot; is incorrect! Better Luck next time.&quot;) # print final score print(getpass.getuser() + &quot; you scored &quot; + str(correct) +&quot;/&quot; + str(questions)) # calculate percentage page = correct/questions * 100 # print percentage print(&quot;Total Percentage: &quot; + str (format(page,&quot;.2f&quot;)) + &quot;%&quot;) . Hello, shivansh running /bin/python3 You will be asked 7 questions. Are you ready to take a test! Press Enter key to begin. Best of luck :) Question 1 : What command is used to include other functions that were previously developed? import is correct! Good Job! Question 2 : What command in this example is used to evaluate a response? if is correct! Good Job! Question 3 : Each &#39;if&#39; command contains an &#39;_________&#39; to determine a true or false condition? expression is correct! Good Job! Question 4 : What does Jupyter Notebooks use? python is correct! Good Job! Question 5 : What is the end of the file name of Mark Down Post? .md is correct! Good Job! Question 6 : What kernel does one need to use to use python? ipykernel is correct! Good Job! Question 7 : What command in terminal allows one to switch directory? cd is correct! Good Job! shivansh you scored 7/7 Total Percentage: 100.00% .",
             "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/2022/08/25/personalizedquiz.html",
@@ -12,7 +23,7 @@
     
   
     
-        ,"post1": {
+        ,"post2": {
             "title": "Shivansh Docx Personalized",
             "content": "Stuff that I like to do: . I like to study the subjects for my school . | I like to code and have fun with computers . | I like to play sports . | I like to play video games . | . Stuff that I want to improve this year . I want to improve in my overall education . | I want to get more fit and healthy than last year . | I want to expand my hobbies and try out new stuff this year . | .",
             "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/2022/08/25/Shivansh-docx-personalized.html",
@@ -23,7 +34,7 @@
     
   
     
-        ,"post2": {
+        ,"post3": {
             "title": "Shivansh's personalized page",
             "content": "Personal Study and Work Pages . Goal for using this page . Useful for connecting notes | Useufl transporting and using code | Help monitor and instantiate content | .",
             "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/markdown/2022/08/24/secondmarkdown.html",
@@ -34,7 +45,7 @@
     
   
     
-        ,"post3": {
+        ,"post4": {
             "title": "Shivansh Goel's First Python Code and use of Jupyter Notebook",
             "content": "print(&quot;Hello, world!&quot;) . Hello, world! .",
             "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/2022/08/21/ShivanshJupyter.html",
@@ -45,7 +56,7 @@
     
   
     
-        ,"post4": {
+        ,"post5": {
             "title": "Shivansh's first Markdown Post",
             "content": "Shivansh Goel Mark Down Post . Goals For CSP this year: . Become better at coding | Learn the various computer languages | Become better with websites and computers | .",
             "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/markdown/2022/08/21/Shivansh.html",
