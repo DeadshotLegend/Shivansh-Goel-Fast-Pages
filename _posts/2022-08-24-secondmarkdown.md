@@ -15,6 +15,6 @@ title: Shivansh's personalized page
 - Help monitor and instantiate content
 
 
-<img src="../images/marble-goddess.jpg" alt="image1">
+<img src="https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/images/marble-goddess.jpg" alt="image1">
 
-<img src="../images/vscode.png" width="400" alt="vscode">
+<img src="https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/images/vscode.png" width="400" alt="vscode">
