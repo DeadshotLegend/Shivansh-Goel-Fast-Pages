@@ -4,8 +4,7 @@ layout: post
 description: Second Mark Down Post for APCSP
 categories: [markdown]
 title: Shivansh's personalized page
-image: ../images/vscode.png
-image: ../images/marble-goddess.jpg
+
 ---
 
 # Personal Study and Work Pages
@@ -16,6 +15,6 @@ image: ../images/marble-goddess.jpg
 - Help monitor and instantiate content
 
 
-<img src="../images/marble-goddess.jpg" width="400" alt="image1">
+<img src="../images/marble-goddess.jpg" alt="image1">
 
-<img src="../images/vscode.jpg" width="400" alt="vscode">
+<img src="../images/vscode.png" width="400" alt="vscode">
