@@ -2,6 +2,7 @@
 layout: page
 title: About Me
 permalink: /about/
+categories: [pages]
 ---
 
 Hello, I am Shivansh Goel and part of APCSP period 5. 

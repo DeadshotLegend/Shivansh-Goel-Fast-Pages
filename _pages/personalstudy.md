@@ -2,6 +2,7 @@
 layout: page
 title: Personalized Study
 permalink: /personalstudy/
+categories: [pages]
 ---
 
 Find assingments on these links and edit them here:

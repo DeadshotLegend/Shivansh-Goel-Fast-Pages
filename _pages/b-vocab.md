@@ -2,6 +2,7 @@
 layout: page
 title: APCSP Vocabulary
 permalink: /b-vocab/
+categories: [pages]
 ---
 
 This APCSP Notes:
