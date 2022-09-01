@@ -2,8 +2,19 @@
   
     
         "post0": {
+            "title": "Tables",
+            "content": "Command Vocabulary | Pseudo code | Python | Purpose | . Output | DISPLAY(expression) | print(expression, end=” “) | Displays the value of expression, followed by a space. Python defaults to newline, thus the end=” “ | . Input | a ← INPUT() | a = input(prompt) | Accepts a value from the user and returns it to the variable a. | . Assignment | a ← expression | a = expression | Evaluates expression and assigns the result to the variable a. | . Selection | IF (expression) | if expression: | Run commands in the code block associated with the selection | . Iteration n times | REPEAT n TIMES | for i in range(n): | Repeat commands in the code block associated withe the iteration n times | . Iteration expression | REPEAT UNTIL (expression) | while expression: | Repeat commands in the code block associated withe the iteration while expression is true | . List Assignment | list ← [expression1, expression2, expression3] | list = [expression1, expression2, expression3] | Assigns 3 values to list, value can be literal or expressions | . First index in List | list[1] | list[0] | Access the 1st element in the list[]. FYI, most programming languages start a zero. | . Last index in List | list[LENGTH(list)] | list[len(list) - 1] | Access the last element in the list[]. If you start at zero, last element is length - 1. | . Define Procedure | PROCEDURE name (parameter) | def name(parameter): | Create a procedure containing a sequence of programming instructions. | . Expression equals | a = b | a == b | Evaluate if assigned value of a equals assigned value of b | . Expression not equals | a ≠ b | a != b | Evaluate if assigned value of a is NOT equal to assigned value of b | .",
+            "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/2022/08/31/tables.html",
+            "relUrl": "/2022/08/31/tables.html",
+            "date": " • Aug 31, 2022"
+        }
+        
+    
+  
+    
+        ,"post1": {
             "title": "Reporting theme changes",
-            "content": "Here is the bad stuff that happened . All the pages, the links on the right top side were removed thus removing an integral part of the blog. | .",
+            "content": "Here is the bad stuff that happened . . All the pages, the links on the right top side were removed thus removing an integral part of the blog. | .",
             "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/markdown/2022/08/31/Bloggingchanges.html",
             "relUrl": "/markdown/2022/08/31/Bloggingchanges.html",
             "date": " • Aug 31, 2022"
@@ -12,7 +23,7 @@
     
   
     
-        ,"post1": {
+        ,"post2": {
             "title": "This is Week 3 Hacks Pythonh Lists",
             "content": "InfoDb = [] # InfoDB is a data structure with expected Keys and Values # Append to List a Dictionary of key/values related to a person and cars InfoDb.append({ &quot;FirstName&quot;: &quot;John&quot;, &quot;LastName&quot;: &quot;Mortensen&quot;, &quot;DOB&quot;: &quot;October 21&quot;, &quot;Residence&quot;: &quot;San Diego&quot;, &quot;Email&quot;: &quot;jmortensen@powayusd.com&quot;, &quot;Owns_Cars&quot;: [&quot;2015-Fusion&quot;, &quot;2011-Ranger&quot;, &quot;2003-Excursion&quot;, &quot;1997-F350&quot;, &quot;1969-Cadillac&quot;] }) # Append to List a 2nd Dictionary of key/values InfoDb.append({ &quot;FirstName&quot;: &quot;Sunny&quot;, &quot;LastName&quot;: &quot;Naidu&quot;, &quot;DOB&quot;: &quot;August 2&quot;, &quot;Residence&quot;: &quot;Temecula&quot;, &quot;Email&quot;: &quot;snaidu@powayusd.com&quot;, &quot;Owns_Cars&quot;: [&quot;4Runner&quot;] }) InfoDb.append({ &quot;FirstName&quot;: &quot;Shivansh&quot;, &quot;LastName&quot;: &quot;Goel&quot;, &quot;DOB&quot;: &quot;October 29 2007&quot;, &quot;Residence&quot;: &quot;San Diego&quot;, &quot;EMail&quot;: &quot;shivanshggamer@gmail.com&quot;, &quot;Owns_Cars&quot;: [&quot;Red Bugatti&quot;, &quot;Yellow Bugatti&quot;, &quot;Orange Bugatti&quot;] }) InfoDb.append({ &quot;FirstName&quot;: &quot;Joe&quot;, &quot;LastName&quot;: &quot;Mama&quot;, &quot;DOB&quot;: &quot;July 4&quot;, &quot;Residence&quot;: &quot;New York&quot;, &quot;Email&quot;: &quot;joemama@gmail.com&quot; &quot;Owns_Cars&quot;: [&quot;GTX-750 Lamborghini&quot;] }) cars = [&quot;Tesla&quot;, &quot;Bugatti&quot;, &quot;Ferrari&quot;, &quot;Mustang&quot;] .",
             "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/2022/08/30/pythonlists.html",
@@ -23,7 +34,7 @@
     
   
     
-        ,"post2": {
+        ,"post3": {
             "title": "Alumni Panel Notes",
             "content": "Alumni Panel Notes . Introduction . Mostly all graduates to UCs | Some of them are not majoring in computer science | . Question 1: Biggest Challenge in Computer Science? . Keeping motivation | A lot of problems and hard to find on the internet | Focus on your own path and try to not to compare with others | Try to ignore clashing egos | Hard finding motivation because of smarter people | Have a better mindset to learn instead of just trying to get stuff down | Getting started in coding is very hard | . Question 2: Are there any PBL scenarios in college computer science classes? . There are 2 PBL scenarios in college. 1 of them is defineftly in senior year Project based learning classes and some theory based classes. | There are a lot of PBL exams which are definite for computer silence | A lot of group based and managing group. Be Careful of getting used for doing too much group work. | Be good at managing work | . Question 3: Have you applied CS in your major if you are not majoring in CS? . There is a lot of coding involved in mechanical engineering which will help you out a lot. | Optimizing things are also very well used in a lot of different majors | Computer science can help with very high level math | A lot of requirements in Stats courses and psychology courses need some type of Computer Science | Programming is almost everywhere in a lot of STEM majors | . Question 4: For existing college students have you had a job with school or professor? . Getting internships and talking to professors will help get better jobs. | Try to be unique from the 200 other students in the college lecture | 2 of the alumnis had Internships in Northrop Grumman | 1 of the alumni had Internships in a company doing APIs and web development | . Other Questions: . Doing 2 or 3 personal projects will help out with applying for internships and stuff Path finding algorithms (Graph Theory, etc) a lot of data visualization | Doing a lot of data application in projects and classes | Club called Trident A in UCSD | When trying to apply for internships always have a resume | .",
             "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/markdown/2022/08/29/Alumni.html",
@@ -34,7 +45,7 @@
     
   
     
-        ,"post3": {
+        ,"post4": {
             "title": "Shivansh's Bash Tutorial Hacks",
             "content": "Setup project local folders . Create / verify local folders exist | Clone / update github repository | . echo &quot;Setting up local folders&quot; export project_dir=$HOME/vscode_shivansh # setting local project folders in vscode_shivansh export project=$project_dir/Shivansh-Goel-Fast-Pages # my git repository will be cloned here export project_repo=&quot;https://github.com/deadshotlegend/Shivansh-Goel-Fast-Pages.git&quot; # my project cd ~ # start in home directory # Check if project directory exists. If not, create one if [ ! -d $project_dir ] then echo &quot;Directory $project_dir does not exists... making directory $project_dir&quot; mkdir -p $project_dir fi echo &quot;Directory $project_dir exists.&quot; # Check if the project directory exists. If exists, then the project was cloned before, and hence # need to updated. If not exists, then the project hasn&#39;t been cloned yet, and I must clone now if [ ! -d $project ] then echo &quot;Git Project directory $project does not exists... cloning $project_repo&quot; cd $project_dir git clone $project_repo cd ~ else echo &quot;Git Project directory $project exists... pulling $project_repo&quot; cd $project git pull origin master echo &quot;$project_repo successfully updated from origin&quot; cd ~ fi echo &quot;Project directory $project successfuly cloned / updated.&quot; . Setting up local folders Directory /home/shivansh/vscode_shivansh exists. Git Project directory /home/shivansh/vscode_shivansh/Shivansh-Goel-Fast-Pages exists... pulling https://github.com/deadshotlegend/Shivansh-Goel-Fast-Pages.git From https://github.com/deadshotlegend/Shivansh-Goel-Fast-Pages * branch master -&gt; FETCH_HEAD Already up to date. https://github.com/deadshotlegend/Shivansh-Goel-Fast-Pages.git successfully updated from origin Project directory /home/shivansh/vscode_shivansh/Shivansh-Goel-Fast-Pages successfuly cloned / updated. . Validate necessary kernels exists . Javascript | Bash | Python3 | . jupyter kernelspec list &gt; /tmp/kernellist.txt python_exists=`awk &#39;$1 == &quot;python3&quot; { print $2 }&#39; /tmp/kernellist.txt` if [ &quot;&quot; != $python_exists ] then echo &quot;Python Kernel Exists at $python_exists&quot; else echo &quot;Python Kernel Does Not Exist&quot; fi bash_exists=`awk &#39;$1 == &quot;bash&quot; { print $2 }&#39; /tmp/kernellist.txt` if [ &quot;&quot; != $bash_exists ] then echo &quot;Bash Kernel Exists at $bash_exists&quot; else echo &quot;Bash Kernel Does Not Exist&quot; fi javascript_exists=`awk &#39;$1 == &quot;javascript&quot; { print $2 }&#39; /tmp/kernellist.txt` if [ &quot;&quot; != $javascript_exists ] then echo &quot;Javascript Kernel Exists at $javascript_exists&quot; else echo &quot;Javascript Kernel Does Not Exist&quot; fi . Python Kernel Exists at /home/shivansh/.local/share/jupyter/kernels/python3 Bash Kernel Exists at /home/shivansh/.local/share/jupyter/kernels/bash Javascript Kernel Exists at /home/shivansh/.local/share/jupyter/kernels/javascript . Validate necessary packages exist . python | ipykernel | bash-kernel | jupyter | more can be added to package_to_validate in script below | . package_list=/tmp/packagelist.txt if [[ ! -f $package_list ]] then conda list -n base &gt; $package_list fi package_to_validate=(python ipykernel bash-kernel jupyter) for pname in &quot;${package_to_validate[@]}&quot; do p_ver=`awk &#39;$1 == pname { print $2 }&#39; pname=$pname /tmp/packagelist.txt` if [ &quot;$p_ver&quot; == &quot;&quot; ] then echo &quot;$pname not installed&quot; else echo &quot;$pname installed with version $p_ver&quot; fi done . python installed with version 3.9.12 ipykernel installed with version 6.9.1 bash-kernel installed with version 0.8.0 jupyter installed with version 1.0.0 .",
             "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/bash/2022/08/28/ShivanshBashTutorial.html",
@@ -45,7 +56,7 @@
     
   
     
-        ,"post4": {
+        ,"post5": {
             "title": "This is the personalized quiz for Week 2 Hacks",
             "content": "My Hacks . I have removed the repeating questions and anwers with a iterative contruct using dictionaries | Added more questions of my own and also calculated a percentage at the end. | Lastly, I have made the answer check case insensitive. | . import getpass, sys # method to display question and get user&#39;s answers def question_with_response(prompt, qCount): print(&quot;Question &quot; + str(qCount) + &quot; : &quot; + prompt) msg = input() return msg # dictionary to hold questions and answers as key : value pairs questionsDict = {&quot;What command is used to include other functions that were previously developed?&quot;: &quot;import&quot;, &quot;What command in this example is used to evaluate a response?&quot;: &quot;if&quot;, &quot;Each &#39;if&#39; command contains an &#39;_________&#39; to determine a true or false condition?&quot;: &quot;expression&quot;, &quot;What does Jupyter Notebooks use?&quot;: &quot;python&quot;, &quot;What is the end of the file name of Mark Down Post?&quot;: &quot;.md&quot;, &quot;What kernel does one need to use to use python?&quot;: &quot;ipykernel&quot;, &quot;What command in terminal allows one to switch directory?&quot;: &quot;cd&quot; } # number of questions as length of the dictionary questions = len(questionsDict) # set correct to 0 correct = 0 print(&#39;Hello, &#39; + getpass.getuser() + &quot; running &quot; + sys.executable) print(&quot;You will be asked &quot; + str(questions) + &quot; questions.&quot;) print(&quot;Are you ready to take a test! Press Enter key to begin. Best of luck :)&quot;) input() questionCount = 0 # iterate over list of keys from the dictionary. pass dictionary key as question to the question_with_response function for key in questionsDict: questionCount += 1 rsp = question_with_response(key, questionCount) # compare the value from the dictionary to the user&#39;s input if rsp.lower() == questionsDict[key].lower(): print(rsp + &quot; is correct! Good Job!&quot;) correct += 1 else: print(rsp + &quot; is incorrect! Better Luck next time.&quot;) # print final score print(getpass.getuser() + &quot; you scored &quot; + str(correct) +&quot;/&quot; + str(questions)) # calculate percentage page = correct/questions * 100 # print percentage print(&quot;Total Percentage: &quot; + str (format(page,&quot;.2f&quot;)) + &quot;%&quot;) . Hello, shivansh running /bin/python3 You will be asked 7 questions. Are you ready to take a test! Press Enter key to begin. Best of luck :) Question 1 : What command is used to include other functions that were previously developed? import is correct! Good Job! Question 2 : What command in this example is used to evaluate a response? if is correct! Good Job! Question 3 : Each &#39;if&#39; command contains an &#39;_________&#39; to determine a true or false condition? expression is correct! Good Job! Question 4 : What does Jupyter Notebooks use? python is correct! Good Job! Question 5 : What is the end of the file name of Mark Down Post? .md is correct! Good Job! Question 6 : What kernel does one need to use to use python? ipykernel is correct! Good Job! Question 7 : What command in terminal allows one to switch directory? cd is correct! Good Job! shivansh you scored 7/7 Total Percentage: 100.00% .",
             "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/2022/08/25/personalizedquiz.html",
@@ -56,7 +67,7 @@
     
   
     
-        ,"post5": {
+        ,"post6": {
             "title": "Shivansh Docx Personalized",
             "content": "Stuff that I like to do: . I like to study the subjects for my school . | I like to code and have fun with computers . | I like to play sports . | I like to play video games . | . Stuff that I want to improve this year . I want to improve in my overall education . | I want to get more fit and healthy than last year . | I want to expand my hobbies and try out new stuff this year . | .",
             "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/2022/08/25/Shivansh-docx-personalized.html",
@@ -67,7 +78,7 @@
     
   
     
-        ,"post6": {
+        ,"post7": {
             "title": "Shivansh's personalized page",
             "content": "Personal Study and Work Pages . Goal for using this page . Useful for connecting notes | Useufl transporting and using code | Help monitor and instantiate content | . . .",
             "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/markdown/2022/08/24/secondmarkdown.html",
@@ -78,7 +89,7 @@
     
   
     
-        ,"post7": {
+        ,"post8": {
             "title": "Shivansh Goel's First Python Code and use of Jupyter Notebook",
             "content": "print(&quot;Hello, world!&quot;) . Hello, world! .",
             "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/2022/08/21/ShivanshJupyter.html",
@@ -89,7 +100,7 @@
     
   
     
-        ,"post8": {
+        ,"post9": {
             "title": "Shivansh's first Markdown Post",
             "content": "Shivansh Goel Mark Down Post . Goals For CSP this year: . Become better at coding | Learn the various computer languages | Become better with websites and computers | .",
             "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/markdown/2022/08/21/Shivansh.html",
