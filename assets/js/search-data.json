@@ -15,8 +15,8 @@
         ,"post1": {
             "title": "Reporting theme changes",
             "content": "Here is the bad stuff that happened . Note: The following image is inserted using a Jekyll Liquid Filter for relative URL . All the pages, the links on the right top side were removed thus removing an integral part of the blog. | .",
-            "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/markdown/2022/08/31/Bloggingchanges.html",
-            "relUrl": "/markdown/2022/08/31/Bloggingchanges.html",
+            "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/markdown/week3/2022/08/31/Bloggingchanges.html",
+            "relUrl": "/markdown/week3/2022/08/31/Bloggingchanges.html",
             "date": " • Aug 31, 2022"
         }
         
