@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: Blogging the changes which happened during the theme change
-categories: [markdown]
+categories: [markdown, week3]
 title: Reporting theme changes
 
 ---
