@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      3 min read
     
 </span></p>
 
@@ -177,15 +177,40 @@ window.onload = wrap_img;
     <span class="s2">&quot;LastName&quot;</span><span class="p">:</span> <span class="s2">&quot;Mama&quot;</span><span class="p">,</span>
     <span class="s2">&quot;DOB&quot;</span><span class="p">:</span> <span class="s2">&quot;July 4&quot;</span><span class="p">,</span>
     <span class="s2">&quot;Residence&quot;</span><span class="p">:</span> <span class="s2">&quot;New York&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Email&quot;</span><span class="p">:</span> <span class="s2">&quot;joemama@gmail.com&quot;</span>
-    <span class="s2">&quot;Owns_Cars&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;GTX-750 Lamborghini&quot;</span><span class="p">]</span>
+    <span class="s2">&quot;Email&quot;</span><span class="p">:</span> <span class="s2">&quot;joemama@yahoo.com&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Owns_Cars&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Lamborhini&quot;</span><span class="p">]</span>
 <span class="p">})</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">InfoDb</span><span class="p">)</span>
+</pre></div>
 
-<span class="o">//</span><span class="n">var</span> <span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="s2">&quot;green&quot;</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="s2">&quot;purple&quot;</span><span class="p">];</span>
-<span class="o">//</span><span class="k">for</span> <span class="p">(</span><span class="n">var</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">colors</span><span class="o">.</span><span class="n">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-  <span class="o">//</span>  <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">colors</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
-<span class="o">//</span><span class="p">}</span>
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">print_data</span><span class="p">(</span><span class="n">d_rec</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;FirstName&quot;</span><span class="p">],</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;LastName&quot;</span><span class="p">])</span>  <span class="c1"># using comma puts space between values</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Residence:&quot;</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;Residence&quot;</span><span class="p">])</span> <span class="c1"># \t is a tab indent</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Birth Day:&quot;</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;DOB&quot;</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Cars: &quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>  <span class="c1"># end=&quot;&quot; make sure no return occurs</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;Owns_Cars&quot;</span><span class="p">]))</span>  <span class="c1"># join allows printing a string list with separator</span>
+    <span class="nb">print</span><span class="p">()</span>
+
+    <span class="c1"># Print the data structure</span>
+<span class="k">def</span> <span class="nf">for_loop</span><span class="p">(</span><span class="n">InfoDb</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;For loop output</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">InfoDb</span><span class="p">:</span>
+        <span class="n">print_data</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
+
+<span class="n">for_loop</span><span class="p">(</span><span class="n">InfoDb</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -197,12 +222,163 @@ window.onload = wrap_img;
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-cyan-fg">  Input </span><span class="ansi-green-fg">In [5]</span>
-<span class="ansi-red-fg">    &#34;Owns_Cars&#34;: [&#34;GTX-750 Lamborghini&#34;]</span>
-               ^
-<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>For loop output
+
+John Mortensen
+	 Residence: San Diego
+	 Birth Day: October 21
+	 Cars: 2015-Fusion, 2011-Ranger, 2003-Excursion, 1997-F350, 1969-Cadillac
+
+Sunny Naidu
+	 Residence: Temecula
+	 Birth Day: August 2
+	 Cars: 4Runner
+
+Shivansh Goel
+	 Residence: San Diego
+	 Birth Day: October 29 2007
+	 Cars: Red Bugatti, Yellow Bugatti, Orange Bugatti
+
+Joe Mama
+	 Residence: New York
+	 Birth Day: July 4
+	 Cars: Lamborhini
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">getpass</span><span class="o">,</span> <span class="nn">sys</span>
+
+<span class="k">def</span> <span class="nf">question_with_response</span><span class="p">(</span><span class="n">prompt</span><span class="p">,</span> <span class="n">qCount</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Question &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">qCount</span><span class="p">)</span>  <span class="o">+</span> <span class="s2">&quot; : &quot;</span> <span class="o">+</span> <span class="n">prompt</span><span class="p">)</span>
+    <span class="n">msg</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">msg</span>
+
+<span class="n">questionsDict</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;What command is used to include other functions that were previously developed?&quot;</span><span class="p">:</span> <span class="s2">&quot;import&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;What command in this example is used to evaluate a response?&quot;</span><span class="p">:</span> <span class="s2">&quot;if&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;Each &#39;if&#39; command contains an &#39;_________&#39; to determine a true or false condition?&quot;</span><span class="p">:</span> <span class="s2">&quot;expression&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;What does Jupyter Notebooks use?&quot;</span><span class="p">:</span> <span class="s2">&quot;python&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;What is the end of the file name of Mark Down Post?&quot;</span><span class="p">:</span> <span class="s2">&quot;.md&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;What kernel does one need to use to use python?&quot;</span><span class="p">:</span> <span class="s2">&quot;ipykernel&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;What command in terminal allows one to switch directory?&quot;</span><span class="p">:</span> <span class="s2">&quot;cd&quot;</span>
+<span class="p">}</span>
+
+<span class="n">questions</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">questionsDict</span><span class="p">)</span>
+<span class="n">correct</span> <span class="o">=</span> <span class="mi">0</span>
+
+
+<span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">questionsDict</span><span class="p">:</span>
+    <span class="n">questionCount</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">questionCount</span><span class="p">)</span>
+    <span class="c1"># compare the value from the dictionary to the user&#39;s input</span>
+    <span class="k">if</span> <span class="n">rsp</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="n">questionsDict</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">&quot; is correct! Good Job!&quot;</span><span class="p">)</span>
+        <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">&quot; is incorrect! Better Luck next time.&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">getpass</span><span class="o">.</span><span class="n">getuser</span><span class="p">()</span> <span class="o">+</span> <span class="s2">&quot; you scored &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">correct</span><span class="p">)</span> <span class="o">+</span><span class="s2">&quot;/&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Question 22 : What command is used to include other functions that were previously developed?
+f is incorrect! Better Luck next time.
+Question 23 : What command in this example is used to evaluate a response?
+f is incorrect! Better Luck next time.
+Question 24 : Each &#39;if&#39; command contains an &#39;_________&#39; to determine a true or false condition?
+f is incorrect! Better Luck next time.
+Question 25 : What does Jupyter Notebooks use?
+f is incorrect! Better Luck next time.
+Question 26 : What is the end of the file name of Mark Down Post?
+f is incorrect! Better Luck next time.
+Question 27 : What kernel does one need to use to use python?
+f is incorrect! Better Luck next time.
+Question 28 : What command in terminal allows one to switch directory?
+f is incorrect! Better Luck next time.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">recursive_loop</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">InfoDb</span><span class="p">):</span>
+        <span class="n">record</span> <span class="o">=</span> <span class="n">InfoDb</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="n">print_data</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
+        <span class="n">recursive_loop</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="k">return</span>
+    
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Recursive loop output</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">recursive_loop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Recursive loop output
+
+John Mortensen
+	 Residence: San Diego
+	 Birth Day: October 21
+	 Cars: 2015-Fusion, 2011-Ranger, 2003-Excursion, 1997-F350, 1969-Cadillac
+
+Sunny Naidu
+	 Residence: Temecula
+	 Birth Day: August 2
+	 Cars: 4Runner
+
+Shivansh Goel
+	 Residence: San Diego
+	 Birth Day: October 29 2007
+	 Cars: Red Bugatti, Yellow Bugatti, Orange Bugatti
+
+Joe Mama
+	 Residence: New York
+	 Birth Day: July 4
+	 Cars: Lamborhini
+
 </pre>
 </div>
 </div>
