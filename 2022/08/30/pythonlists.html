@@ -255,37 +255,40 @@ Joe Mama
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">getpass</span><span class="o">,</span> <span class="nn">sys</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">PythonQuiz</span><span class="p">(</span><span class="n">prompt</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">word</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Question: &quot;</span> <span class="o">+</span> <span class="n">prompt</span><span class="p">)</span>
+    <span class="n">word</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">word</span>
 
-<span class="k">def</span> <span class="nf">question_with_response</span><span class="p">(</span><span class="n">prompt</span><span class="p">,</span> <span class="n">qCount</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Question &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">qCount</span><span class="p">)</span>  <span class="o">+</span> <span class="s2">&quot; : &quot;</span> <span class="o">+</span> <span class="n">prompt</span><span class="p">)</span>
-    <span class="n">msg</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
-    <span class="k">return</span> <span class="n">msg</span>
+<span class="n">questions_number</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">correct_answer</span> <span class="o">=</span> <span class="mi">0</span>
 
-<span class="n">questionsDict</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;What command is used to include other functions that were previously developed?&quot;</span><span class="p">:</span> <span class="s2">&quot;import&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;What command in this example is used to evaluate a response?&quot;</span><span class="p">:</span> <span class="s2">&quot;if&quot;</span><span class="p">,</span> 
-    <span class="s2">&quot;Each &#39;if&#39; command contains an &#39;_________&#39; to determine a true or false condition?&quot;</span><span class="p">:</span> <span class="s2">&quot;expression&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;What does Jupyter Notebooks use?&quot;</span><span class="p">:</span> <span class="s2">&quot;python&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;What is the end of the file name of Mark Down Post?&quot;</span><span class="p">:</span> <span class="s2">&quot;.md&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;What kernel does one need to use to use python?&quot;</span><span class="p">:</span> <span class="s2">&quot;ipykernel&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;What command in terminal allows one to switch directory?&quot;</span><span class="p">:</span> <span class="s2">&quot;cd&quot;</span>
-<span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, you will be asked &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions_number</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; questions you should know.&quot;</span><span class="p">)</span>
 
-<span class="n">questions</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">questionsDict</span><span class="p">)</span>
-<span class="n">correct</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">TheQuiz</span><span class="o">=</span><span class="p">[]</span>
+
+<span class="n">TheQuiz</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">&quot;What value is a dozen&quot;</span><span class="p">:</span> <span class="s2">&quot;12&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How many days are in a year&quot;</span><span class="p">:</span> <span class="s2">&quot;365&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How many years are in a decade&quot;</span><span class="p">:</span> <span class="s2">&quot;10&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How much eggs are too much&quot;</span><span class="p">:</span> <span class="s2">&quot;5&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;What is the main measurment for distance in USA&quot;</span><span class="p">:</span> <span class="s2">&quot;mile&quot;</span><span class="p">,</span>
+<span class="p">})</span>
 
 
-<span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">questionsDict</span><span class="p">:</span>
-    <span class="n">questionCount</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">questionCount</span><span class="p">)</span>
-    <span class="c1"># compare the value from the dictionary to the user&#39;s input</span>
-    <span class="k">if</span> <span class="n">rsp</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="n">questionsDict</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">&quot; is correct! Good Job!&quot;</span><span class="p">)</span>
-        <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">&quot; is incorrect! Better Luck next time.&quot;</span><span class="p">)</span>
+<span class="c1"># for loop checks answers with the value in the dictionary</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">getpass</span><span class="o">.</span><span class="n">getuser</span><span class="p">()</span> <span class="o">+</span> <span class="s2">&quot; you scored &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">correct</span><span class="p">)</span> <span class="o">+</span><span class="s2">&quot;/&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions</span><span class="p">))</span>
+<span class="k">for</span> <span class="nb">dict</span> <span class="ow">in</span> <span class="n">TheQuiz</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">questions</span><span class="p">,</span> <span class="n">answers</span> <span class="ow">in</span> <span class="nb">dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="n">PythonQuiz</span><span class="p">(</span><span class="n">questions</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">word</span> <span class="o">==</span> <span class="n">answers</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="nb">input</span><span class="p">()</span> <span class="o">+</span> <span class="s2">&quot; is correct&quot;</span><span class="p">)</span>
+            <span class="n">correct_answer</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="nb">input</span><span class="p">()</span> <span class="o">+</span><span class="s2">&quot; is incorrect&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You scored &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">correct_answer</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;/&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions_number</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;. Good Job!&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
