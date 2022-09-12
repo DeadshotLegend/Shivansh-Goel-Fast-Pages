@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Code.org Quiz",
-            "content": "The thoughts and ideas before creating the quiz . We decided to create a quiz about a video game | We reviewed the incomplete program given and we figuredo that we should add something which would tell if one got the answer wrong | . Quiz Creation . The onEvent function will be used and the variable used will be console.log: “message” | . During or After finished the quiz . Trying for loops was very difficult | Initiliazing a variable wasn’t working until we set it as a global variable | If, else if, and else statements came in handy in the scoring process | . Stuff which I did differnet than normal quiz . I added if, else if, and else statements to add up the points | I added pictures and transitions | link to the quiz: https://studio.code.org/projects/applab/7CbDivekQhy604GMl1L-g90DV9CtQBdsoT7uJl0f5iM/edit | .",
+            "content": "The thoughts and ideas before creating the quiz . We decided to create a quiz about a video game | We reviewed the incomplete program given and we figuredo that we should add something which would tell if one got the answer wrong | . Quiz Creation . The onEvent function will be used and the variable used will be console.log: “message” | . During or After finished the quiz . Trying for loops was very difficult | Initiliazing a variable wasn’t working until we set it as a global variable | If, else if, and else statements came in handy in the scoring process | . Stuff which I did differnet than normal quiz . I added if, else if, and else statements to add up the points | I added pictures and transitions | I also added audio to the clip if one got it correct | link to the quiz: https://studio.code.org/projects/applab/7CbDivekQhy604GMl1L-g90DV9CtQBdsoT7uJl0f5iM/edit | .",
             "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/markdown/week%204/2022/09/22/codequiz.html",
             "relUrl": "/markdown/week%204/2022/09/22/codequiz.html",
             "date": " • Sep 22, 2022"
@@ -13,8 +13,8 @@
   
     
         ,"post1": {
-            "title": "Title",
-            "content": "Firts thoughts and brainstorm . My partner and I figured out that we want to create a web page where we can quiz people or take insight on what other poeple have to say. | What we can start right now is setting up python code for interactive stuff we will have on the web page | We can also start creating html and markdown pages which will be very helpful for the use in the webpages | We can also start creating tags and links to make the webpage more operatable | .",
+            "title": "Preformance Task",
+            "content": "",
             "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/2022/09/09/preformancetask.html",
             "relUrl": "/2022/09/09/preformancetask.html",
             "date": " • Sep 9, 2022"
