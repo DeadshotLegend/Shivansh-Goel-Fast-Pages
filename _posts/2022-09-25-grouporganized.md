@@ -23,8 +23,8 @@ Resources for fitness
 Fitness Quiz 
 Water Log 
 
-Purpose
-The purpose we will use in our app will be able to give an output through a person input, using arrays, lists, if else and other elements of code.
+Program Purpose:
+- The purpose we will use in our app will be able to give an output through a person input, using arrays, lists, if else and other elements of code.
 
 SCRUM team role
 
