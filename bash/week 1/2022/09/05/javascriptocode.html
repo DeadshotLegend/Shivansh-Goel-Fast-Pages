@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      4 min read
     
 </span></p>
 
@@ -142,34 +142,34 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="c1">// define a function to hold data for a Contender</span>
-<span class="kd">function</span> <span class="nx">Contender</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">money</span><span class="p">,</span> <span class="nx">championships</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">money</span> <span class="o">=</span> <span class="nx">money</span><span class="p">;</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">championships</span> <span class="o">=</span> <span class="nx">championships</span><span class="p">;</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">role</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">//</span> <span class="n">define</span> <span class="n">a</span> <span class="n">function</span> <span class="n">to</span> <span class="n">hold</span> <span class="n">data</span> <span class="k">for</span> <span class="n">a</span> <span class="n">Contender</span>
+<span class="n">function</span> <span class="n">Contender</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">money</span><span class="p">,</span> <span class="n">championships</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">this</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
+    <span class="n">this</span><span class="o">.</span><span class="n">money</span> <span class="o">=</span> <span class="n">money</span><span class="p">;</span>
+    <span class="n">this</span><span class="o">.</span><span class="n">championships</span> <span class="o">=</span> <span class="n">championships</span><span class="p">;</span>
+    <span class="n">this</span><span class="o">.</span><span class="n">role</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="c1">// define a setter for role in Contender data</span>
-<span class="nx">Contender</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">setRole</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">role</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">role</span> <span class="o">=</span> <span class="nx">role</span><span class="p">;</span>
+<span class="o">//</span> <span class="n">define</span> <span class="n">a</span> <span class="n">setter</span> <span class="k">for</span> <span class="n">role</span> <span class="ow">in</span> <span class="n">Contender</span> <span class="n">data</span>
+<span class="n">Contender</span><span class="o">.</span><span class="n">prototype</span><span class="o">.</span><span class="n">setRole</span> <span class="o">=</span> <span class="n">function</span><span class="p">(</span><span class="n">role</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">this</span><span class="o">.</span><span class="n">role</span> <span class="o">=</span> <span class="n">role</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="c1">// define a JSON conversion &quot;method&quot; associated with Contender</span>
-<span class="nx">Contender</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">toJSON</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kr">const</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">,</span> <span class="nx">money</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">money</span><span class="p">,</span> <span class="nx">championships</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">championships</span><span class="p">,</span> <span class="nx">role</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">role</span><span class="p">};</span>
-    <span class="kr">const</span> <span class="nx">json</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">obj</span><span class="p">);</span>
-    <span class="k">return</span> <span class="nx">json</span><span class="p">;</span>
+<span class="o">//</span> <span class="n">define</span> <span class="n">a</span> <span class="n">JSON</span> <span class="n">conversion</span> <span class="s2">&quot;method&quot;</span> <span class="n">associated</span> <span class="k">with</span> <span class="n">Contender</span>
+<span class="n">Contender</span><span class="o">.</span><span class="n">prototype</span><span class="o">.</span><span class="n">toJSON</span> <span class="o">=</span> <span class="n">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">const</span> <span class="n">obj</span> <span class="o">=</span> <span class="p">{</span><span class="n">name</span><span class="p">:</span> <span class="n">this</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">money</span><span class="p">:</span> <span class="n">this</span><span class="o">.</span><span class="n">money</span><span class="p">,</span> <span class="n">championships</span><span class="p">:</span> <span class="n">this</span><span class="o">.</span><span class="n">championships</span><span class="p">,</span> <span class="n">role</span><span class="p">:</span> <span class="n">this</span><span class="o">.</span><span class="n">role</span><span class="p">};</span>
+    <span class="n">const</span> <span class="n">json</span> <span class="o">=</span> <span class="n">JSON</span><span class="o">.</span><span class="n">stringify</span><span class="p">(</span><span class="n">obj</span><span class="p">);</span>
+    <span class="k">return</span> <span class="n">json</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="c1">// make a new Contender and assign to variable ultimatechampion</span>
-<span class="kd">var</span> <span class="nx">ultimatechampion</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Contender</span><span class="p">(</span><span class="s2">&quot;Dolphins&quot;</span><span class="p">,</span> <span class="s2">&quot;10.1B&quot;</span><span class="p">,</span> <span class="mf">1000</span><span class="p">);</span>  <span class="c1">// object type is easy to work with in JavaScript</span>
-<span class="nx">logItType</span><span class="p">(</span><span class="nx">ultimatechampion</span><span class="p">);</span>  <span class="c1">// before role</span>
-<span class="nx">logItType</span><span class="p">(</span><span class="nx">ultimatechampion</span><span class="p">.</span><span class="nx">toJSON</span><span class="p">());</span>  
+<span class="o">//</span> <span class="n">make</span> <span class="n">a</span> <span class="n">new</span> <span class="n">Contender</span> <span class="ow">and</span> <span class="n">assign</span> <span class="n">to</span> <span class="n">variable</span> <span class="n">ultimatechampion</span>
+<span class="n">var</span> <span class="n">ultimatechampion</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Contender</span><span class="p">(</span><span class="s2">&quot;Dolphins&quot;</span><span class="p">,</span> <span class="s2">&quot;10.1B&quot;</span><span class="p">,</span> <span class="mi">1000</span><span class="p">);</span>  <span class="o">//</span> <span class="nb">object</span> <span class="nb">type</span> <span class="ow">is</span> <span class="n">easy</span> <span class="n">to</span> <span class="n">work</span> <span class="k">with</span> <span class="ow">in</span> <span class="n">JavaScript</span>
+<span class="n">logItType</span><span class="p">(</span><span class="n">ultimatechampion</span><span class="p">);</span>  <span class="o">//</span> <span class="n">before</span> <span class="n">role</span>
+<span class="n">logItType</span><span class="p">(</span><span class="n">ultimatechampion</span><span class="o">.</span><span class="n">toJSON</span><span class="p">());</span>  
 
-<span class="nx">ultimatechampion</span><span class="p">.</span><span class="nx">setRole</span><span class="p">(</span><span class="s2">&quot;ultimatechampion&quot;</span><span class="p">);</span>  
-<span class="nx">logItType</span><span class="p">(</span><span class="nx">ultimatechampion</span><span class="p">);</span> 
-<span class="nx">logItType</span><span class="p">(</span><span class="nx">ultimatechampion</span><span class="p">.</span><span class="nx">toJSON</span><span class="p">());</span>
+<span class="n">ultimatechampion</span><span class="o">.</span><span class="n">setRole</span><span class="p">(</span><span class="s2">&quot;ultimatechampion&quot;</span><span class="p">);</span>  
+<span class="n">logItType</span><span class="p">(</span><span class="n">ultimatechampion</span><span class="p">);</span> 
+<span class="n">logItType</span><span class="p">(</span><span class="n">ultimatechampion</span><span class="o">.</span><span class="n">toJSON</span><span class="p">());</span>
 </pre></div>
 
     </div>
@@ -211,31 +211,31 @@ string ; {&#34;name&#34;:&#34;Dolphins&#34;,&#34;money&#34;:&#34;10.1B&#34;,&#34
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="kd">var</span> <span class="nx">poverty</span> <span class="o">=</span> <span class="p">[</span> 
-    <span class="k">new</span> <span class="nx">Contender</span><span class="p">(</span><span class="s2">&quot;Cheifs&quot;</span><span class="p">,</span> <span class="s2">&quot;5.4B&quot;</span><span class="p">,</span> <span class="mf">2019</span><span class="p">),</span>
-    <span class="k">new</span> <span class="nx">Contender</span><span class="p">(</span><span class="s2">&quot;Packers&quot;</span><span class="p">,</span> <span class="s2">&quot;4.1B&quot;</span><span class="p">,</span> <span class="mf">2008</span><span class="p">),</span>
-    <span class="k">new</span> <span class="nx">Contender</span><span class="p">(</span><span class="s2">&quot;Warriors&quot;</span><span class="p">,</span> <span class="s2">&quot;5.2B&quot;</span><span class="p">,</span> <span class="mf">20122</span><span class="p">),</span>
-    <span class="k">new</span> <span class="nx">Contender</span><span class="p">(</span><span class="s2">&quot;Bears&quot;</span><span class="p">,</span> <span class="s2">&quot;3.4B&quot;</span><span class="p">,</span> <span class="mf">2014</span><span class="p">),</span>
-    <span class="k">new</span> <span class="nx">Contender</span><span class="p">(</span><span class="s2">&quot;Ravens&quot;</span><span class="p">,</span> <span class="s2">&quot;1.7B&quot;</span><span class="p">,</span> <span class="mf">1995</span><span class="p">),</span>
-    <span class="k">new</span> <span class="nx">Contender</span><span class="p">(</span><span class="s2">&quot;Bengals&quot;</span><span class="p">,</span> <span class="s2">&quot;2.7B&quot;</span><span class="p">,</span> <span class="mf">2021</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">var</span> <span class="n">poverty</span> <span class="o">=</span> <span class="p">[</span> 
+    <span class="n">new</span> <span class="n">Contender</span><span class="p">(</span><span class="s2">&quot;Cheifs&quot;</span><span class="p">,</span> <span class="s2">&quot;5.4B&quot;</span><span class="p">,</span> <span class="mi">2019</span><span class="p">),</span>
+    <span class="n">new</span> <span class="n">Contender</span><span class="p">(</span><span class="s2">&quot;Packers&quot;</span><span class="p">,</span> <span class="s2">&quot;4.1B&quot;</span><span class="p">,</span> <span class="mi">2008</span><span class="p">),</span>
+    <span class="n">new</span> <span class="n">Contender</span><span class="p">(</span><span class="s2">&quot;Warriors&quot;</span><span class="p">,</span> <span class="s2">&quot;5.2B&quot;</span><span class="p">,</span> <span class="mi">20122</span><span class="p">),</span>
+    <span class="n">new</span> <span class="n">Contender</span><span class="p">(</span><span class="s2">&quot;Bears&quot;</span><span class="p">,</span> <span class="s2">&quot;3.4B&quot;</span><span class="p">,</span> <span class="mi">2014</span><span class="p">),</span>
+    <span class="n">new</span> <span class="n">Contender</span><span class="p">(</span><span class="s2">&quot;Ravens&quot;</span><span class="p">,</span> <span class="s2">&quot;1.7B&quot;</span><span class="p">,</span> <span class="mi">1995</span><span class="p">),</span>
+    <span class="n">new</span> <span class="n">Contender</span><span class="p">(</span><span class="s2">&quot;Bengals&quot;</span><span class="p">,</span> <span class="s2">&quot;2.7B&quot;</span><span class="p">,</span> <span class="mi">2021</span><span class="p">)</span>
 <span class="p">];</span>
 
-<span class="kd">function</span> <span class="nx">League</span><span class="p">(</span><span class="nx">ultimatechampion</span><span class="p">,</span> <span class="nx">poverty</span><span class="p">){</span> 
-    <span class="nx">ultimatechampion</span><span class="p">.</span><span class="nx">setRole</span><span class="p">(</span><span class="s2">&quot;ultimatechampion&quot;</span><span class="p">);</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">ultimatechampion</span> <span class="o">=</span> <span class="nx">ultimatechampion</span><span class="p">;</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">League</span> <span class="o">=</span> <span class="p">[</span><span class="nx">ultimatechampion</span><span class="p">];</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">poverty</span> <span class="o">=</span> <span class="nx">poverty</span><span class="p">;</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">poverty</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">student</span> <span class="p">=&gt;</span> <span class="p">{</span> <span class="nx">student</span><span class="p">.</span><span class="nx">setRole</span><span class="p">(</span><span class="s2">&quot;Student&quot;</span><span class="p">);</span> <span class="k">this</span><span class="p">.</span><span class="nx">League</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">student</span><span class="p">);</span> <span class="p">});</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">json</span> <span class="o">=</span> <span class="p">[];</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">League</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">Contender</span> <span class="p">=&gt;</span> <span class="k">this</span><span class="p">.</span><span class="nx">json</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">Contender</span><span class="p">.</span><span class="nx">toJSON</span><span class="p">()));</span>
+<span class="n">function</span> <span class="n">League</span><span class="p">(</span><span class="n">ultimatechampion</span><span class="p">,</span> <span class="n">poverty</span><span class="p">){</span> 
+    <span class="n">ultimatechampion</span><span class="o">.</span><span class="n">setRole</span><span class="p">(</span><span class="s2">&quot;ultimatechampion&quot;</span><span class="p">);</span>
+    <span class="n">this</span><span class="o">.</span><span class="n">ultimatechampion</span> <span class="o">=</span> <span class="n">ultimatechampion</span><span class="p">;</span>
+    <span class="n">this</span><span class="o">.</span><span class="n">League</span> <span class="o">=</span> <span class="p">[</span><span class="n">ultimatechampion</span><span class="p">];</span>
+    <span class="n">this</span><span class="o">.</span><span class="n">poverty</span> <span class="o">=</span> <span class="n">poverty</span><span class="p">;</span>
+    <span class="n">this</span><span class="o">.</span><span class="n">poverty</span><span class="o">.</span><span class="n">forEach</span><span class="p">(</span><span class="n">student</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="n">student</span><span class="o">.</span><span class="n">setRole</span><span class="p">(</span><span class="s2">&quot;Student&quot;</span><span class="p">);</span> <span class="n">this</span><span class="o">.</span><span class="n">League</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="n">student</span><span class="p">);</span> <span class="p">});</span>
+    <span class="n">this</span><span class="o">.</span><span class="n">json</span> <span class="o">=</span> <span class="p">[];</span>
+    <span class="n">this</span><span class="o">.</span><span class="n">League</span><span class="o">.</span><span class="n">forEach</span><span class="p">(</span><span class="n">Contender</span> <span class="o">=&gt;</span> <span class="n">this</span><span class="o">.</span><span class="n">json</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="n">Contender</span><span class="o">.</span><span class="n">toJSON</span><span class="p">()));</span>
 <span class="p">}</span>
 
-<span class="nx">compsci</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">League</span><span class="p">(</span><span class="nx">ultimatechampion</span><span class="p">,</span> <span class="nx">poverty</span><span class="p">);</span>
+<span class="n">compsci</span> <span class="o">=</span> <span class="n">new</span> <span class="n">League</span><span class="p">(</span><span class="n">ultimatechampion</span><span class="p">,</span> <span class="n">poverty</span><span class="p">);</span>
 
-<span class="nx">logItType</span><span class="p">(</span><span class="nx">compsci</span><span class="p">.</span><span class="nx">League</span><span class="p">);</span>  
-<span class="nx">logItType</span><span class="p">(</span><span class="nx">compsci</span><span class="p">.</span><span class="nx">League</span><span class="p">[</span><span class="mf">0</span><span class="p">].</span><span class="nx">name</span><span class="p">);</span>  
-<span class="nx">logItType</span><span class="p">(</span><span class="nx">compsci</span><span class="p">.</span><span class="nx">json</span><span class="p">[</span><span class="mf">0</span><span class="p">]);</span>  
-<span class="nx">logItType</span><span class="p">(</span><span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">compsci</span><span class="p">.</span><span class="nx">json</span><span class="p">[</span><span class="mf">0</span><span class="p">]));</span>
+<span class="n">logItType</span><span class="p">(</span><span class="n">compsci</span><span class="o">.</span><span class="n">League</span><span class="p">);</span>  
+<span class="n">logItType</span><span class="p">(</span><span class="n">compsci</span><span class="o">.</span><span class="n">League</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">name</span><span class="p">);</span>  
+<span class="n">logItType</span><span class="p">(</span><span class="n">compsci</span><span class="o">.</span><span class="n">json</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>  
+<span class="n">logItType</span><span class="p">(</span><span class="n">JSON</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">compsci</span><span class="o">.</span><span class="n">json</span><span class="p">[</span><span class="mi">0</span><span class="p">]));</span>  
 </pre></div>
 
     </div>
@@ -306,39 +306,39 @@ object ; { name: &#39;Dolphins&#39;,
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="nx">League</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">_toHtml</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-  <span class="kd">var</span> <span class="nx">style</span> <span class="o">=</span> <span class="p">(</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">League</span><span class="o">.</span><span class="n">prototype</span><span class="o">.</span><span class="n">_toHtml</span> <span class="o">=</span> <span class="n">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">var</span> <span class="n">style</span> <span class="o">=</span> <span class="p">(</span>
     <span class="s2">&quot;display:inline-block;&quot;</span> <span class="o">+</span>
     <span class="s2">&quot;background:black;&quot;</span> <span class="o">+</span>
     <span class="s2">&quot;border: 2px solid grey;&quot;</span> <span class="o">+</span>
     <span class="s2">&quot;box-shadow: 0.8em 0.4em 0.4em grey;&quot;</span>
   <span class="p">);</span>
 
-  <span class="kd">var</span> <span class="nx">body</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
-  <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;tr&gt;&quot;</span><span class="p">;</span>
-  <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;th&gt;&lt;mark&gt;&quot;</span> <span class="o">+</span> <span class="s2">&quot;Name&quot;</span> <span class="o">+</span> <span class="s2">&quot;&lt;/mark&gt;&lt;/th&gt;&quot;</span><span class="p">;</span>
-  <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;th&gt;&lt;mark&gt;&quot;</span> <span class="o">+</span> <span class="s2">&quot;Money&quot;</span> <span class="o">+</span> <span class="s2">&quot;&lt;/mark&gt;&lt;/th&gt;&quot;</span><span class="p">;</span>
-  <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;th&gt;&lt;mark&gt;&quot;</span> <span class="o">+</span> <span class="s2">&quot;Championships&quot;</span> <span class="o">+</span> <span class="s2">&quot;&lt;/mark&gt;&lt;/th&gt;&quot;</span><span class="p">;</span>
-  <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;/tr&gt;&quot;</span><span class="p">;</span>
-  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">row</span> <span class="k">of</span> <span class="nx">compsci</span><span class="p">.</span><span class="nx">League</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;tr&gt;&quot;</span><span class="p">;</span>
-    <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;td&gt;&quot;</span> <span class="o">+</span> <span class="nx">row</span><span class="p">.</span><span class="nx">name</span> <span class="o">+</span> <span class="s2">&quot;&lt;/td&gt;&quot;</span><span class="p">;</span>
-    <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;td&gt;&quot;</span> <span class="o">+</span> <span class="nx">row</span><span class="p">.</span><span class="nx">money</span> <span class="o">+</span> <span class="s2">&quot;&lt;/td&gt;&quot;</span><span class="p">;</span>
-    <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;td&gt;&quot;</span> <span class="o">+</span> <span class="nx">row</span><span class="p">.</span><span class="nx">championships</span> <span class="o">+</span> <span class="s2">&quot;&lt;/td&gt;&quot;</span><span class="p">;</span>
-    <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;tr&gt;&quot;</span><span class="p">;</span>
+  <span class="n">var</span> <span class="n">body</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+  <span class="n">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;tr&gt;&quot;</span><span class="p">;</span>
+  <span class="n">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;th&gt;&lt;mark&gt;&quot;</span> <span class="o">+</span> <span class="s2">&quot;Name&quot;</span> <span class="o">+</span> <span class="s2">&quot;&lt;/mark&gt;&lt;/th&gt;&quot;</span><span class="p">;</span>
+  <span class="n">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;th&gt;&lt;mark&gt;&quot;</span> <span class="o">+</span> <span class="s2">&quot;Money&quot;</span> <span class="o">+</span> <span class="s2">&quot;&lt;/mark&gt;&lt;/th&gt;&quot;</span><span class="p">;</span>
+  <span class="n">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;th&gt;&lt;mark&gt;&quot;</span> <span class="o">+</span> <span class="s2">&quot;Championships&quot;</span> <span class="o">+</span> <span class="s2">&quot;&lt;/mark&gt;&lt;/th&gt;&quot;</span><span class="p">;</span>
+  <span class="n">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;/tr&gt;&quot;</span><span class="p">;</span>
+  <span class="k">for</span> <span class="p">(</span><span class="n">var</span> <span class="n">row</span> <span class="n">of</span> <span class="n">compsci</span><span class="o">.</span><span class="n">League</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;tr&gt;&quot;</span><span class="p">;</span>
+    <span class="n">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;td&gt;&quot;</span> <span class="o">+</span> <span class="n">row</span><span class="o">.</span><span class="n">name</span> <span class="o">+</span> <span class="s2">&quot;&lt;/td&gt;&quot;</span><span class="p">;</span>
+    <span class="n">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;td&gt;&quot;</span> <span class="o">+</span> <span class="n">row</span><span class="o">.</span><span class="n">money</span> <span class="o">+</span> <span class="s2">&quot;&lt;/td&gt;&quot;</span><span class="p">;</span>
+    <span class="n">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;td&gt;&quot;</span> <span class="o">+</span> <span class="n">row</span><span class="o">.</span><span class="n">championships</span> <span class="o">+</span> <span class="s2">&quot;&lt;/td&gt;&quot;</span><span class="p">;</span>
+    <span class="n">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;tr&gt;&quot;</span><span class="p">;</span>
   <span class="p">}</span>
 
   <span class="k">return</span> <span class="p">(</span>
-    <span class="s2">&quot;&lt;div style=&#39;&quot;</span> <span class="o">+</span> <span class="nx">style</span> <span class="o">+</span> <span class="s2">&quot;&#39;&gt;&quot;</span> <span class="o">+</span>
+    <span class="s2">&quot;&lt;div style=&#39;&quot;</span> <span class="o">+</span> <span class="n">style</span> <span class="o">+</span> <span class="s2">&quot;&#39;&gt;&quot;</span> <span class="o">+</span>
       <span class="s2">&quot;&lt;table&gt;&quot;</span> <span class="o">+</span>
-        <span class="nx">body</span> <span class="o">+</span>
+        <span class="n">body</span> <span class="o">+</span>
       <span class="s2">&quot;&lt;/table&gt;&quot;</span> <span class="o">+</span>
     <span class="s2">&quot;&lt;/div&gt;&quot;</span>
   <span class="p">);</span>
 
 <span class="p">};</span>
 
-<span class="nx">$$</span><span class="p">.</span><span class="nx">html</span><span class="p">(</span><span class="nx">compsci</span><span class="p">.</span><span class="nx">_toHtml</span><span class="p">());</span>
+<span class="err">$$</span><span class="o">.</span><span class="n">html</span><span class="p">(</span><span class="n">compsci</span><span class="o">.</span><span class="n">_toHtml</span><span class="p">());</span>
 </pre></div>
 
     </div>
@@ -361,6 +361,104 @@ object ; { name: &#39;Dolphins&#39;,
 &lt;/div&gt;
 
 &lt;/div&gt;
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">getpass</span><span class="o">,</span> <span class="nn">sys</span>
+
+<span class="c1"># method to display question and get user&#39;s answers</span>
+<span class="k">def</span> <span class="nf">question_with_response</span><span class="p">(</span><span class="n">prompt</span><span class="p">,</span> <span class="n">qCount</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Question &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">qCount</span><span class="p">)</span>  <span class="o">+</span> <span class="s2">&quot; : &quot;</span> <span class="o">+</span> <span class="n">prompt</span><span class="p">)</span>
+    <span class="n">msg</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">msg</span>
+
+<span class="c1"># dictionary to hold questions and answers as key : value pairs</span>
+<span class="n">questionsDict</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;How much money does the Chiefs have&quot;</span><span class="p">:</span> <span class="s2">&quot;10.1B&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How much money does the Chiefs have&quot;</span><span class="p">:</span> <span class="s2">&quot;5.4B&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;How much money does the Packers have&quot;</span><span class="p">:</span> <span class="s2">&quot;4.1B&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How much money does the warriors have?&quot;</span><span class="p">:</span> <span class="s2">&quot;5.2B&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How much money does the Bears have? &quot;</span><span class="p">:</span> <span class="s2">&quot;.md&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How much money does the Ravens have?&quot;</span><span class="p">:</span> <span class="s2">&quot;1.7B&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How much money does the Bengals have?&quot;</span><span class="p">:</span> <span class="s2">&quot;2.7B&quot;</span>
+<span class="p">}</span>
+
+<span class="c1"># number of questions as length of the dictionary</span>
+<span class="n">questions</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">questionsDict</span><span class="p">)</span>
+
+<span class="c1"># set correct to 0</span>
+<span class="n">correct</span> <span class="o">=</span> <span class="mi">0</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello, &#39;</span> <span class="o">+</span> <span class="n">getpass</span><span class="o">.</span><span class="n">getuser</span><span class="p">()</span> <span class="o">+</span> <span class="s2">&quot; running &quot;</span> <span class="o">+</span> <span class="n">sys</span><span class="o">.</span><span class="n">executable</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You will be asked &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; questions.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Are you ready to take a test! Press Enter key to begin. Best of luck :)&quot;</span><span class="p">)</span>
+<span class="nb">input</span><span class="p">()</span>
+
+<span class="n">questionCount</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="c1"># iterate over list of keys from the dictionary. pass dictionary key as question to the question_with_response function</span>
+<span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">questionsDict</span><span class="p">:</span>
+    <span class="n">questionCount</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">questionCount</span><span class="p">)</span>
+    <span class="c1"># compare the value from the dictionary to the user&#39;s input</span>
+    <span class="k">if</span> <span class="n">rsp</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="n">questionsDict</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">&quot; is correct! Good Job!&quot;</span><span class="p">)</span>
+        <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">&quot; is incorrect! Better Luck next time.&quot;</span><span class="p">)</span>
+
+<span class="c1"># print final score    </span>
+<span class="nb">print</span><span class="p">(</span><span class="n">getpass</span><span class="o">.</span><span class="n">getuser</span><span class="p">()</span> <span class="o">+</span> <span class="s2">&quot; you scored &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">correct</span><span class="p">)</span> <span class="o">+</span><span class="s2">&quot;/&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions</span><span class="p">))</span>
+
+<span class="c1"># calculate percentage</span>
+<span class="n">page</span> <span class="o">=</span> <span class="n">correct</span><span class="o">/</span><span class="n">questions</span> <span class="o">*</span> <span class="mi">100</span>
+
+<span class="c1"># print percentage</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total Percentage: &quot;</span> <span class="o">+</span> <span class="nb">str</span> <span class="p">(</span><span class="nb">format</span><span class="p">(</span><span class="n">page</span><span class="p">,</span><span class="s2">&quot;.2f&quot;</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&quot;%&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Hello, shivansh running /home/shivansh/anaconda3/bin/python
+You will be asked 6 questions.
+Are you ready to take a test! Press Enter key to begin. Best of luck :)
+Question 1 : How much money does the Chiefs have
+4.3 is incorrect! Better Luck next time.
+Question 2 : How much money does the Packers have
+4.1 is incorrect! Better Luck next time.
+Question 3 : How much money does the warriors have?
+5.2B is correct! Good Job!
+Question 4 : How much money does the Bears have? 
+8B is incorrect! Better Luck next time.
+Question 5 : How much money does the Ravens have?
+1.7B is correct! Good Job!
+Question 6 : How much money does the Bengals have?
+2.7B is correct! Good Job!
+shivansh you scored 3/6
+Total Percentage: 50.00%
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
     
 
 &lt;/div&gt;
