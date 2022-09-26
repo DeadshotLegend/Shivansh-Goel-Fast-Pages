@@ -26,4 +26,16 @@ Water Log
 Purpose
 The purpose we will use in our app will be able to give an output through a person input, using arrays, lists, if else and other elements of code.
 
+SCRUM team role
+
+My team and I decided on the following roles:
+
+    Prasith: Backend
+    Krishiv: Scrum Master
+    Shivansh: Frontend
+    Dhruva: Backend
+    Advay: Devops
+
+As Frontend I will make sure that our code is displayed to its best
+
 <img src="https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/images/grouproles.PNG" alt="image1">
