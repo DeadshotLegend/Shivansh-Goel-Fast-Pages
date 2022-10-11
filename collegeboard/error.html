@@ -67,7 +67,7 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/Shivansh-Goel-Fast-Pages/about/">About Me</a><a class="page-link" href="/Shivansh-Goel-Fast-Pages/b-vocab/">APCSP Vocabulary</a><a class="page-link" href="/Shivansh-Goel-Fast-Pages/about/">About Me</a><a class="page-link" href="/Shivansh-Goel-Fast-Pages/notes/">APCSP Notes</a><a class="page-link" href="/Shivansh-Goel-Fast-Pages/personalstudy/">Personalized Study</a><a class="page-link" href="/Shivansh-Goel-Fast-Pages/search/">Search</a><a class="page-link" href="/Shivansh-Goel-Fast-Pages/categories/">Tags</a></div>
+        <div class="trigger"><a class="page-link" href="/Shivansh-Goel-Fast-Pages/about/">About Me</a><a class="page-link" href="/Shivansh-Goel-Fast-Pages/b-vocab/">APCSP Vocabulary</a><a class="page-link" href="/Shivansh-Goel-Fast-Pages/about/">Submenu</a><a class="page-link" href="/Shivansh-Goel-Fast-Pages/notes/">APCSP Notes</a><a class="page-link" href="/Shivansh-Goel-Fast-Pages/personalstudy/">Personalized Study</a><a class="page-link" href="/Shivansh-Goel-Fast-Pages/search/">Search</a><a class="page-link" href="/Shivansh-Goel-Fast-Pages/categories/">Tags</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -165,18 +165,61 @@ window.onload = wrap_img;
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">AttributeError</span>                            Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/home/shivansh/vscode2/Shivansh-Goel-Fast-Pages/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb Cell 2</span> in <span class="ansi-cyan-fg">&lt;cell line: 19&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shivansh/vscode2/Shivansh-Goel-Fast-Pages/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=16&#39;&gt;17&lt;/a&gt;</span> #print(response.json())
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shivansh/vscode2/Shivansh-Goel-Fast-Pages/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=17&#39;&gt;18&lt;/a&gt;</span> champion = response.json().get(&#39;data&#39;)
-<span class="ansi-green-fg">---&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shivansh/vscode2/Shivansh-Goel-Fast-Pages/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=18&#39;&gt;19&lt;/a&gt;</span> for key, value in champion.items():  # this finds key, value pairs in country
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shivansh/vscode2/Shivansh-Goel-Fast-Pages/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=19&#39;&gt;20&lt;/a&gt;</span>     print(key, value)
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shivansh/vscode2/Shivansh-Goel-Fast-Pages/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=21&#39;&gt;22&lt;/a&gt;</span> print(&#34;Here are the stadiums where the games are occuring at:&#34;)
-
-<span class="ansi-red-fg">AttributeError</span>: &#39;list&#39; object has no attribute &#39;items&#39;</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Here are the stadiums where the games are occuring at:
+Empower Field at Mile High
+Tottenham Hotspur Stadium
+Highmark Stadium
+FirstEnergy Stadium
+U.S. Bank Stadium
+Gillette Stadium
+Caesars Superdome
+MetLife Stadium
+Raymond James Stadium
+FedExField
+TIAA Bank Field
+Bank of America Stadium
+SoFi Stadium
+State Farm Stadium
+M&amp;T Bank Stadium
+GEHA Field at Arrowhead Stadium
+Break
+Here are the dates where the games are occuring:
+2022-10-07T00:15Z
+2022-10-09T13:30Z
+2022-10-09T17:00Z
+2022-10-09T17:00Z
+2022-10-09T17:00Z
+2022-10-09T17:00Z
+2022-10-09T17:00Z
+2022-10-09T17:00Z
+2022-10-09T17:00Z
+2022-10-09T17:00Z
+2022-10-09T17:00Z
+2022-10-09T20:05Z
+2022-10-09T20:25Z
+2022-10-09T20:25Z
+2022-10-10T00:20Z
+2022-10-11T00:15Z
+Break
+Here are the matchups that are occuring:
+Indianapolis Colts at Denver Broncos
+New York Giants at Green Bay Packers
+Pittsburgh Steelers at Buffalo Bills
+Los Angeles Chargers at Cleveland Browns
+Chicago Bears at Minnesota Vikings
+Detroit Lions at New England Patriots
+Seattle Seahawks at New Orleans Saints
+Miami Dolphins at New York Jets
+Atlanta Falcons at Tampa Bay Buccaneers
+Tennessee Titans at Washington Commanders
+Houston Texans at Jacksonville Jaguars
+San Francisco 49ers at Carolina Panthers
+Dallas Cowboys at Los Angeles Rams
+Philadelphia Eagles at Arizona Cardinals
+Cincinnati Bengals at Baltimore Ravens
+Las Vegas Raiders at Kansas City Chiefs
+</pre>
 </div>
 </div>
 
