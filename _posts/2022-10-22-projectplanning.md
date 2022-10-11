@@ -14,7 +14,7 @@ title: ProjectPLanning
 - The purpose of this is to have two seperate code segments which are not connected. One should show data being stored as a list and one should show data being used in the program function. 
 
 ### Managing Complexity (Shivansh)
-- To manage Complexity in the we will manipulate the data so it gives  
+- To manage Complexity in the we will manipulate the data so it gives us the sepcifc workout plan and diet needed after a the given input. We will use use specific methods as well as abstracting it using frontend techniques to make it more user-friendly.
 
 ### Procedural Abstraction(Advay)
 
