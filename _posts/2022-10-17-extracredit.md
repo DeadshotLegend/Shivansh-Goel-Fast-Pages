@@ -3,7 +3,7 @@ toc: true
 layout: post
 description: ExtraCredit 1
 categories: [markdown, Week 0]
-title: ExtrCredit1 Zoom Meeting 1 
+title: ExtraCreditBothZoomMeetings 
 ---
 ### Extra Credit Zoom Meeting 1
 
