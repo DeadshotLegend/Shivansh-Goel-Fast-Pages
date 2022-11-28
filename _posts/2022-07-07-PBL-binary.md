@@ -6,124 +6,144 @@ categories: [markdown, Week 13]
 title: PBL Binary File
 ---
 
-### Hack #1 -
+{% assign BITS = 24 %}
 
-<button name="button" onclick="getRandomBinaryHack1()" style="background-color:green; border-color:blue; color:white">Generate the next random number to convert!!!</button>
-<br/>
-
-<p id="randomBinary" style="background-color:yellow; color:black">Binary.</p>
-<p id="randomDecimal" style="background-color:red; color:black">Decimal.</p>
-<p id="randomOctal" style="background-color:green; color:black">Octal.</p>
-<p id="randomHex" style="background-color:orange; color:black">Hex.</p>
-<br/><br/><br/><br/>
-### Hack #2 
-<button name="button" onclick="getRandomBinaryHack2()" style="background-color:green; border-color:blue; color:white">Generate the next random number to change color!!!</button>
-<br/>
-<p id="colorBox" style="background-color:purple; color:black">The Color changes</p>
-<p id="colorBoxHex"></p>
-<br/><br/><br/><br/>
-### Hack #3 - 
-<button name="button" onclick="displayBits()" style="background-color:green; border-color:blue; color:white">Display Bits to flip!!!</button>
-<p id="randomBinaryP" style="background-color:orange; color:black">Binary.</p>
-<p id="randomHexP" style="background-color:orange; color:black">Hex.</p>
-<p id="randomDecimalP" style="background-color:orange; color:black">Decimal.</p>
-<p id="randomOctalP" style="background-color:orange; color:black">Octal.</p>
-
-<table style="width:100%">
-  <tr>
-    <td><button id="tbit7" onclick="bitToggle(7)" >Toggle</button></td>
-    <td><button id="tbit6" onclick="bitToggle(6)" >Toggle</button></td>
-    <td><button id="tbit5" onclick="bitToggle(5)" >Toggle</button></td>
-    <td><button id="tbit4" onclick="bitToggle(4)" >Toggle</button></td>
-    <td><button id="tbit3" onclick="bitToggle(3)" >Toggle</button></td>
-    <td><button id="tbit2" onclick="bitToggle(2)" >Toggle</button></td>
-    <td><button id="tbit1" onclick="bitToggle(1)" >Toggle</button></td>
-    <td><button id="tbit0" onclick="bitToggle(0)" >Toggle</button></td>
-    
-  </tr>
-  <tr>
-    <td id="bit0">1</td>
-    <td id="bit1">0</td>
-    <td id="bit2">1</td>
-    <td id="bit3">1</td>
-    <td id="bit4">0</td>
-    <td id="bit5">1</td>
-    <td id="bit6">1</td>
-    <td id="bit7">0</td>
-  </tr>
-</table>
+<div class="container bg-primary">
+    <header class="pb-3 mb-4 border-bottom border-primary text-dark">
+        <span class="fs-4">Binary Math with Conversions</span>
+    </header>
+    <div class="row justify-content-md-center">
+        <div class="col-8">
+            <table class="table">
+            <tr id="table">
+                <th>Plus</th>
+                <th>Binary</th>
+                <th>Octal</th>
+                <th>Hexadecimal</th>
+                <th>Decimal</th>
+                <th>Minus</th>
+            </tr>
+            <tr>
+                <td><button type="button" id="add1" onclick="add(1)">+1</button></td>
+                <td id="binary">00000000</td>
+                <td id="octal">0</td>
+                <td id="hexadecimal">0</td>
+                <td id="decimal">0</td>
+                <td><button type="button" id="sub1" onclick="add(-1)">-1</button></td>
+            </tr>
+            </table>
+        </div>
+        <div class="col-12">
+            {% comment %}Liquid for loop includes last number, thus the Minus{% endcomment %}
+            {% assign bits = BITS | minus: 1 %} 
+            <table class="table">
+            <tr>
+                {% comment %}Build many bits{% endcomment %}
+                {% for i in (0..bits) %}
+                <td><img class="img-responsive py-3" id="bulb{{ i }}" src="{{site.baseurl}}/images/bulb_off.png" alt="" width="40" height="Auto">
+                    <button type="button" id="butt{{ i }}" onclick="javascript:toggleBit({{ i }})">Turn on</button>
+                </td>
+                {% endfor %}
+            </tr>
+            <tr>
+                {% comment %}Value of bit{% endcomment %}
+                {% for i in (0..bits) %}
+                <td><input type='text' id="digit{{ i }}" Value="0" size="1" readonly></td>
+                {% endfor %}
+            </tr>
+            </table>
+        </div>
+    </div>
+</div>
 
 <script>
-// this function is called upon button click
-function getRandomBinaryHack1() {
-	var time = new Date().getMilliseconds(); //get current time
-	var random = time % 100; // get the value < 100
-	var val = random;					       
+    const BITS = {{ BITS }};
+    const MAX = 2 ** BITS - 1;
+    const MSG_ON = "Turn on";
+    const IMAGE_ON = "{{site.baseurl}}/images/bulb_on.gif";
+    const MSG_OFF = "Turn off";
+    const IMAGE_OFF = "{{site.baseurl}}/images/bulb_off.png"
 
-    document.getElementById("randomBinary").innerHTML = "Binary: " + random.toString(2); 
-    document.getElementById("randomDecimal").innerHTML = "Decimal: " + random.toString(10); 
-    document.getElementById("randomOctal").innerHTML = "Octal: " + random.toString(8); 
-    document.getElementById("randomHex").innerHTML = "Hexadecimal: 0x" + random.toString(16);
-	
-}
-						       
-// this function is called upon button click
-function getRandomBinaryHack2() {
-	var time = new Date().getMilliseconds(); //get current time
-	var val = time % 100; // get the value < 100
-	var hex = val.toString(16);
-	
-	// Set color					     
-    document.getElementById("colorBox").style.backgroundColor = `rgb(${val}, ${val}, ${val})`;
-    document.getElementById("colorBox").innerHTML = "Color Code: rgb(" + val + "," + val + "," + val + ")";
-    document.getElementById("colorBoxHex").innerHTML = "Hex#" + hex + hex + hex;
-}
-						       
-var gDecimal = 14;
-function displayBits() {
-    //decimal = 10; //101
-    var binary = "";
-    //document.write("Hello, Coding Ground!");
-    //while (decimal > 0) {
-    decimal = gDecimal;
-    for (i = 7; i > -1; i--) {
-       bitid = "bit" + i;
-       
-       if (decimal & 1) {
-          binary = "1" + binary;
-          document.getElementById(bitid).innerHTML = "1";
-       } else {
-          binary = "0" + binary;
-          document.getElementById(bitid).innerHTML = "0";
-       }
-       decimal = decimal >> 1;
+    // return string with current value of each bit
+    function getBits() {
+        let bits = "";
+        for(let i = 0; i < BITS; i++) {
+        bits = bits + document.getElementById('digit' + i).value;
+        }
+        return bits;
     }
-   document.getElementById("randomBinaryP").innerHTML = "Binary: " + binary;
-   document.getElementById("randomHexP").innerHTML = "Hexadecimal: 0x" +gDecimal.toString(16);
-   document.getElementById("randomOctalP").innerHTML = "Octal: " + gDecimal.toString(8);
-   document.getElementById("randomDecimalP").innerHTML = "Decimal: " + gDecimal.toString(10);
-}
-function bit_test(num, bit){
-    return ((num>>bit) % 2 != 0)
-}
+    // setter for DOM values
+    function setConversions(binary) {
+        document.getElementById('binary').innerHTML = binary;
+        // Octal conversion
+        document.getElementById('octal').innerHTML = parseInt(binary, 2).toString(8);
+        // Hexadecimal conversion
+        document.getElementById('hexadecimal').innerHTML = parseInt(binary, 2).toString(16);
+        // Decimal conversion
+        document.getElementById('decimal').innerHTML = parseInt(binary, 2).toString();
+    }
+    //
+    function decimal_2_base(decimal, base) {
+        let conversion = "";
+        // loop to convert to base
+        do {
+        let digit = decimal % base;
+        conversion = "" + digit + conversion; // what does this do?
+        decimal = ~~(decimal / base);         // what does this do?
+        } while (decimal > 0);                  // why while at the end? what is ~~?
+        // loop to pad with zeros
+        if (base === 2) {                        // only pad for binary conversions
+        for (let i = 0; conversion.length < BITS; i++) {
+            conversion = "0" + conversion;
+        }
+        }
+        return conversion;
+    }
 
-function bit_set(num, bit){
-    return num | 1<<bit;
-}
-
-function bit_clear(num, bit){
-    return num & ~(1<<bit);
-}
-
-function bitToggle(bit){
-    num = gDecimal;
-    gDecimal = bit_test(num, bit) ? bit_clear(num, bit) : bit_set(num, bit);
-    //gDecimal = bit_set(num, bit);
-    displayBits();
-	document.getElementById("randomDecimalP").innerHTML = "Decimal: " + gDecimal.toString(10);
-    return decimal;
-}
-	
-</script>
-
-
+    // toggle selected bit and recalculate
+    function toggleBit(i) {
+        //alert("Digit action: " + i );
+        const dig = document.getElementById('digit' + i);
+        const image = document.getElementById('bulb' + i);
+        const butt = document.getElementById('butt' + i);
+        // Change digit and visual
+        if (image.src.match(IMAGE_ON)) {
+        dig.value = 0;
+        image.src = IMAGE_OFF;
+        butt.innerHTML = MSG_ON;
+        } else {
+        dig.value = 1;
+        image.src = IMAGE_ON;
+        butt.innerHTML = MSG_OFF;
+        }
+        // Binary numbers
+        const binary = getBits();
+        setConversions(binary);
+    }
+    // add is positive integer, subtract is negative integer
+    function add(n) {
+        let binary = getBits();
+        // convert to decimal and do math
+        let decimal = parseInt(binary, 2);
+        if (n > 0) {  // PLUS
+        decimal = MAX === decimal ? 0 : decimal += n; // OVERFLOW or PLUS
+        } else  {     // MINUS
+        decimal = 0 === decimal ? MAX : decimal += n; // OVERFLOW or MINUS
+        }
+        // convert the result back to binary
+        binary = decimal_2_base(decimal, 2);
+        // update conversions
+        setConversions(binary);
+        // update bits
+        for (let i = 0; i < binary.length; i++) {
+        let digit = binary.substr(i, 1);
+        document.getElementById('digit' + i).value = digit;
+        if (digit === "1") {
+            document.getElementById('bulb' + i).src = IMAGE_ON;
+            document.getElementById('butt' + i).innerHTML = MSG_OFF;
+        } else {
+            document.getElementById('bulb' + i).src = IMAGE_OFF;
+            document.getElementById('butt' + i).innerHTML = MSG_ON;
+        }
+        }
+    }
