@@ -99,132 +99,309 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h3"><a href="#hack-1--">Hack #1 -</a></li>
-<li class="toc-entry toc-h3"><a href="#hack-2">Hack #2</a></li>
-<li class="toc-entry toc-h3"><a href="#hack-3--">Hack #3 -</a></li>
-</ul><h3 id="hack-1--">
-<a class="anchor" href="#hack-1--" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hack #1 -</h3>
-
-<p><button name="button" onclick="getRandomBinaryHack1()" style="background-color:green; border-color:blue; color:white">Generate the next random number to convert!!!</button>
-<br></p>
-
-<p id="randomBinary" style="background-color:yellow; color:black">Binary.</p>
-<p id="randomDecimal" style="background-color:red; color:black">Decimal.</p>
-<p id="randomOctal" style="background-color:green; color:black">Octal.</p>
-<p id="randomHex" style="background-color:orange; color:black">Hex.</p>
-<p><br><br><br><br></p>
-<h3 id="hack-2">
-<a class="anchor" href="#hack-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hack #2</h3>
-<p><button name="button" onclick="getRandomBinaryHack2()" style="background-color:green; border-color:blue; color:white">Generate the next random number to change color!!!</button>
-<br></p>
-<p id="colorBox" style="background-color:purple; color:black">The Color changes</p>
-<p id="colorBoxHex"></p>
-<p><br><br><br><br></p>
-<h3 id="hack-3--">
-<a class="anchor" href="#hack-3--" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hack #3 -</h3>
-<p><button name="button" onclick="displayBits()" style="background-color:green; border-color:blue; color:white">Display Bits to flip!!!</button></p>
-<p id="randomBinaryP" style="background-color:orange; color:black">Binary.</p>
-<p id="randomHexP" style="background-color:orange; color:black">Hex.</p>
-<p id="randomDecimalP" style="background-color:orange; color:black">Decimal.</p>
-<p id="randomOctalP" style="background-color:orange; color:black">Octal.</p>
-
-<table style="width:100%">
-  <tr>
-    <td><button id="tbit7" onclick="bitToggle(7)">Toggle</button></td>
-    <td><button id="tbit6" onclick="bitToggle(6)">Toggle</button></td>
-    <td><button id="tbit5" onclick="bitToggle(5)">Toggle</button></td>
-    <td><button id="tbit4" onclick="bitToggle(4)">Toggle</button></td>
-    <td><button id="tbit3" onclick="bitToggle(3)">Toggle</button></td>
-    <td><button id="tbit2" onclick="bitToggle(2)">Toggle</button></td>
-    <td><button id="tbit1" onclick="bitToggle(1)">Toggle</button></td>
-    <td><button id="tbit0" onclick="bitToggle(0)">Toggle</button></td>
-    
-  </tr>
-  <tr>
-    <td id="bit0">1</td>
-    <td id="bit1">0</td>
-    <td id="bit2">1</td>
-    <td id="bit3">1</td>
-    <td id="bit4">0</td>
-    <td id="bit5">1</td>
-    <td id="bit6">1</td>
-    <td id="bit7">0</td>
-  </tr>
-</table>
+</ul>
+<div class="container bg-primary">
+    <header class="pb-3 mb-4 border-bottom border-primary text-dark">
+        <span class="fs-4">Binary Math with Conversions</span>
+    </header>
+    <div class="row justify-content-md-center">
+        <div class="col-8">
+            <table class="table">
+            <tr id="table">
+                <th>Plus</th>
+                <th>Binary</th>
+                <th>Octal</th>
+                <th>Hexadecimal</th>
+                <th>Decimal</th>
+                <th>Minus</th>
+            </tr>
+            <tr>
+                <td><button type="button" id="add1" onclick="add(1)">+1</button></td>
+                <td id="binary">00000000</td>
+                <td id="octal">0</td>
+                <td id="hexadecimal">0</td>
+                <td id="decimal">0</td>
+                <td><button type="button" id="sub1" onclick="add(-1)">-1</button></td>
+            </tr>
+            </table>
+        </div>
+        <div class="col-12">
+            
+             
+            <table class="table">
+            <tr>
+                
+                
+                <td>
+<img class="img-responsive py-3" id="bulb0" src="/Shivansh-Goel-Fast-Pages/images/bulb_off.png" alt="" width="40" height="Auto">
+                    <button type="button" id="butt0" onclick="javascript:toggleBit(0)">Turn on</button>
+                </td>
+                
+                <td>
+<img class="img-responsive py-3" id="bulb1" src="/Shivansh-Goel-Fast-Pages/images/bulb_off.png" alt="" width="40" height="Auto">
+                    <button type="button" id="butt1" onclick="javascript:toggleBit(1)">Turn on</button>
+                </td>
+                
+                <td>
+<img class="img-responsive py-3" id="bulb2" src="/Shivansh-Goel-Fast-Pages/images/bulb_off.png" alt="" width="40" height="Auto">
+                    <button type="button" id="butt2" onclick="javascript:toggleBit(2)">Turn on</button>
+                </td>
+                
+                <td>
+<img class="img-responsive py-3" id="bulb3" src="/Shivansh-Goel-Fast-Pages/images/bulb_off.png" alt="" width="40" height="Auto">
+                    <button type="button" id="butt3" onclick="javascript:toggleBit(3)">Turn on</button>
+                </td>
+                
+                <td>
+<img class="img-responsive py-3" id="bulb4" src="/Shivansh-Goel-Fast-Pages/images/bulb_off.png" alt="" width="40" height="Auto">
+                    <button type="button" id="butt4" onclick="javascript:toggleBit(4)">Turn on</button>
+                </td>
+                
+                <td>
+<img class="img-responsive py-3" id="bulb5" src="/Shivansh-Goel-Fast-Pages/images/bulb_off.png" alt="" width="40" height="Auto">
+                    <button type="button" id="butt5" onclick="javascript:toggleBit(5)">Turn on</button>
+                </td>
+                
+                <td>
+<img class="img-responsive py-3" id="bulb6" src="/Shivansh-Goel-Fast-Pages/images/bulb_off.png" alt="" width="40" height="Auto">
+                    <button type="button" id="butt6" onclick="javascript:toggleBit(6)">Turn on</button>
+                </td>
+                
+                <td>
+<img class="img-responsive py-3" id="bulb7" src="/Shivansh-Goel-Fast-Pages/images/bulb_off.png" alt="" width="40" height="Auto">
+                    <button type="button" id="butt7" onclick="javascript:toggleBit(7)">Turn on</button>
+                </td>
+                
+                <td>
+<img class="img-responsive py-3" id="bulb8" src="/Shivansh-Goel-Fast-Pages/images/bulb_off.png" alt="" width="40" height="Auto">
+                    <button type="button" id="butt8" onclick="javascript:toggleBit(8)">Turn on</button>
+                </td>
+                
+                <td>
+<img class="img-responsive py-3" id="bulb9" src="/Shivansh-Goel-Fast-Pages/images/bulb_off.png" alt="" width="40" height="Auto">
+                    <button type="button" id="butt9" onclick="javascript:toggleBit(9)">Turn on</button>
+                </td>
+                
+                <td>
+<img class="img-responsive py-3" id="bulb10" src="/Shivansh-Goel-Fast-Pages/images/bulb_off.png" alt="" width="40" height="Auto">
+                    <button type="button" id="butt10" onclick="javascript:toggleBit(10)">Turn on</button>
+                </td>
+                
+                <td>
+<img class="img-responsive py-3" id="bulb11" src="/Shivansh-Goel-Fast-Pages/images/bulb_off.png" alt="" width="40" height="Auto">
+                    <button type="button" id="butt11" onclick="javascript:toggleBit(11)">Turn on</button>
+                </td>
+                
+                <td>
+<img class="img-responsive py-3" id="bulb12" src="/Shivansh-Goel-Fast-Pages/images/bulb_off.png" alt="" width="40" height="Auto">
+                    <button type="button" id="butt12" onclick="javascript:toggleBit(12)">Turn on</button>
+                </td>
+                
+                <td>
+<img class="img-responsive py-3" id="bulb13" src="/Shivansh-Goel-Fast-Pages/images/bulb_off.png" alt="" width="40" height="Auto">
+                    <button type="button" id="butt13" onclick="javascript:toggleBit(13)">Turn on</button>
+                </td>
+                
+                <td>
+<img class="img-responsive py-3" id="bulb14" src="/Shivansh-Goel-Fast-Pages/images/bulb_off.png" alt="" width="40" height="Auto">
+                    <button type="button" id="butt14" onclick="javascript:toggleBit(14)">Turn on</button>
+                </td>
+                
+                <td>
+<img class="img-responsive py-3" id="bulb15" src="/Shivansh-Goel-Fast-Pages/images/bulb_off.png" alt="" width="40" height="Auto">
+                    <button type="button" id="butt15" onclick="javascript:toggleBit(15)">Turn on</button>
+                </td>
+                
+                <td>
+<img class="img-responsive py-3" id="bulb16" src="/Shivansh-Goel-Fast-Pages/images/bulb_off.png" alt="" width="40" height="Auto">
+                    <button type="button" id="butt16" onclick="javascript:toggleBit(16)">Turn on</button>
+                </td>
+                
+                <td>
+<img class="img-responsive py-3" id="bulb17" src="/Shivansh-Goel-Fast-Pages/images/bulb_off.png" alt="" width="40" height="Auto">
+                    <button type="button" id="butt17" onclick="javascript:toggleBit(17)">Turn on</button>
+                </td>
+                
+                <td>
+<img class="img-responsive py-3" id="bulb18" src="/Shivansh-Goel-Fast-Pages/images/bulb_off.png" alt="" width="40" height="Auto">
+                    <button type="button" id="butt18" onclick="javascript:toggleBit(18)">Turn on</button>
+                </td>
+                
+                <td>
+<img class="img-responsive py-3" id="bulb19" src="/Shivansh-Goel-Fast-Pages/images/bulb_off.png" alt="" width="40" height="Auto">
+                    <button type="button" id="butt19" onclick="javascript:toggleBit(19)">Turn on</button>
+                </td>
+                
+                <td>
+<img class="img-responsive py-3" id="bulb20" src="/Shivansh-Goel-Fast-Pages/images/bulb_off.png" alt="" width="40" height="Auto">
+                    <button type="button" id="butt20" onclick="javascript:toggleBit(20)">Turn on</button>
+                </td>
+                
+                <td>
+<img class="img-responsive py-3" id="bulb21" src="/Shivansh-Goel-Fast-Pages/images/bulb_off.png" alt="" width="40" height="Auto">
+                    <button type="button" id="butt21" onclick="javascript:toggleBit(21)">Turn on</button>
+                </td>
+                
+                <td>
+<img class="img-responsive py-3" id="bulb22" src="/Shivansh-Goel-Fast-Pages/images/bulb_off.png" alt="" width="40" height="Auto">
+                    <button type="button" id="butt22" onclick="javascript:toggleBit(22)">Turn on</button>
+                </td>
+                
+                <td>
+<img class="img-responsive py-3" id="bulb23" src="/Shivansh-Goel-Fast-Pages/images/bulb_off.png" alt="" width="40" height="Auto">
+                    <button type="button" id="butt23" onclick="javascript:toggleBit(23)">Turn on</button>
+                </td>
+                
+            </tr>
+            <tr>
+                
+                
+                <td><input type="text" id="digit0" value="0" size="1" readonly></td>
+                
+                <td><input type="text" id="digit1" value="0" size="1" readonly></td>
+                
+                <td><input type="text" id="digit2" value="0" size="1" readonly></td>
+                
+                <td><input type="text" id="digit3" value="0" size="1" readonly></td>
+                
+                <td><input type="text" id="digit4" value="0" size="1" readonly></td>
+                
+                <td><input type="text" id="digit5" value="0" size="1" readonly></td>
+                
+                <td><input type="text" id="digit6" value="0" size="1" readonly></td>
+                
+                <td><input type="text" id="digit7" value="0" size="1" readonly></td>
+                
+                <td><input type="text" id="digit8" value="0" size="1" readonly></td>
+                
+                <td><input type="text" id="digit9" value="0" size="1" readonly></td>
+                
+                <td><input type="text" id="digit10" value="0" size="1" readonly></td>
+                
+                <td><input type="text" id="digit11" value="0" size="1" readonly></td>
+                
+                <td><input type="text" id="digit12" value="0" size="1" readonly></td>
+                
+                <td><input type="text" id="digit13" value="0" size="1" readonly></td>
+                
+                <td><input type="text" id="digit14" value="0" size="1" readonly></td>
+                
+                <td><input type="text" id="digit15" value="0" size="1" readonly></td>
+                
+                <td><input type="text" id="digit16" value="0" size="1" readonly></td>
+                
+                <td><input type="text" id="digit17" value="0" size="1" readonly></td>
+                
+                <td><input type="text" id="digit18" value="0" size="1" readonly></td>
+                
+                <td><input type="text" id="digit19" value="0" size="1" readonly></td>
+                
+                <td><input type="text" id="digit20" value="0" size="1" readonly></td>
+                
+                <td><input type="text" id="digit21" value="0" size="1" readonly></td>
+                
+                <td><input type="text" id="digit22" value="0" size="1" readonly></td>
+                
+                <td><input type="text" id="digit23" value="0" size="1" readonly></td>
+                
+            </tr>
+            </table>
+        </div>
+    </div>
+</div>
 
 <script>
-// this function is called upon button click
-function getRandomBinaryHack1() {
-	var time = new Date().getMilliseconds(); //get current time
-	var random = time % 100; // get the value < 100
-	var val = random;					       
+    const BITS = 24;
+    const MAX = 2 ** BITS - 1;
+    const MSG_ON = "Turn on";
+    const IMAGE_ON = "/Shivansh-Goel-Fast-Pages/images/bulb_on.gif";
+    const MSG_OFF = "Turn off";
+    const IMAGE_OFF = "/Shivansh-Goel-Fast-Pages/images/bulb_off.png"
 
-    document.getElementById("randomBinary").innerHTML = "Binary: " + random.toString(2); 
-    document.getElementById("randomDecimal").innerHTML = "Decimal: " + random.toString(10); 
-    document.getElementById("randomOctal").innerHTML = "Octal: " + random.toString(8); 
-    document.getElementById("randomHex").innerHTML = "Hexadecimal: 0x" + random.toString(16);
-	
-}
-						       
-// this function is called upon button click
-function getRandomBinaryHack2() {
-	var time = new Date().getMilliseconds(); //get current time
-	var val = time % 100; // get the value < 100
-	var hex = val.toString(16);
-	
-	// Set color					     
-    document.getElementById("colorBox").style.backgroundColor = `rgb(${val}, ${val}, ${val})`;
-    document.getElementById("colorBox").innerHTML = "Color Code: rgb(" + val + "," + val + "," + val + ")";
-    document.getElementById("colorBoxHex").innerHTML = "Hex#" + hex + hex + hex;
-}
-						       
-var gDecimal = 14;
-function displayBits() {
-    //decimal = 10; //101
-    var binary = "";
-    //document.write("Hello, Coding Ground!");
-    //while (decimal > 0) {
-    decimal = gDecimal;
-    for (i = 7; i > -1; i--) {
-       bitid = "bit" + i;
-       
-       if (decimal & 1) {
-          binary = "1" + binary;
-          document.getElementById(bitid).innerHTML = "1";
-       } else {
-          binary = "0" + binary;
-          document.getElementById(bitid).innerHTML = "0";
-       }
-       decimal = decimal >> 1;
+    // return string with current value of each bit
+    function getBits() {
+        let bits = "";
+        for(let i = 0; i < BITS; i++) {
+        bits = bits + document.getElementById('digit' + i).value;
+        }
+        return bits;
     }
-   document.getElementById("randomBinaryP").innerHTML = "Binary: " + binary;
-   document.getElementById("randomHexP").innerHTML = "Hexadecimal: 0x" +gDecimal.toString(16);
-   document.getElementById("randomOctalP").innerHTML = "Octal: " + gDecimal.toString(8);
-   document.getElementById("randomDecimalP").innerHTML = "Decimal: " + gDecimal.toString(10);
-}
-function bit_test(num, bit){
-    return ((num>>bit) % 2 != 0)
-}
+    // setter for DOM values
+    function setConversions(binary) {
+        document.getElementById('binary').innerHTML = binary;
+        // Octal conversion
+        document.getElementById('octal').innerHTML = parseInt(binary, 2).toString(8);
+        // Hexadecimal conversion
+        document.getElementById('hexadecimal').innerHTML = parseInt(binary, 2).toString(16);
+        // Decimal conversion
+        document.getElementById('decimal').innerHTML = parseInt(binary, 2).toString();
+    }
+    //
+    function decimal_2_base(decimal, base) {
+        let conversion = "";
+        // loop to convert to base
+        do {
+        let digit = decimal % base;
+        conversion = "" + digit + conversion; // what does this do?
+        decimal = ~~(decimal / base);         // what does this do?
+        } while (decimal > 0);                  // why while at the end? what is ~~?
+        // loop to pad with zeros
+        if (base === 2) {                        // only pad for binary conversions
+        for (let i = 0; conversion.length < BITS; i++) {
+            conversion = "0" + conversion;
+        }
+        }
+        return conversion;
+    }
 
-function bit_set(num, bit){
-    return num | 1<<bit;
-}
-
-function bit_clear(num, bit){
-    return num & ~(1<<bit);
-}
-
-function bitToggle(bit){
-    num = gDecimal;
-    gDecimal = bit_test(num, bit) ? bit_clear(num, bit) : bit_set(num, bit);
-    //gDecimal = bit_set(num, bit);
-    displayBits();
-	document.getElementById("randomDecimalP").innerHTML = "Decimal: " + gDecimal.toString(10);
-    return decimal;
-}
-	
+    // toggle selected bit and recalculate
+    function toggleBit(i) {
+        //alert("Digit action: " + i );
+        const dig = document.getElementById('digit' + i);
+        const image = document.getElementById('bulb' + i);
+        const butt = document.getElementById('butt' + i);
+        // Change digit and visual
+        if (image.src.match(IMAGE_ON)) {
+        dig.value = 0;
+        image.src = IMAGE_OFF;
+        butt.innerHTML = MSG_ON;
+        } else {
+        dig.value = 1;
+        image.src = IMAGE_ON;
+        butt.innerHTML = MSG_OFF;
+        }
+        // Binary numbers
+        const binary = getBits();
+        setConversions(binary);
+    }
+    // add is positive integer, subtract is negative integer
+    function add(n) {
+        let binary = getBits();
+        // convert to decimal and do math
+        let decimal = parseInt(binary, 2);
+        if (n > 0) {  // PLUS
+        decimal = MAX === decimal ? 0 : decimal += n; // OVERFLOW or PLUS
+        } else  {     // MINUS
+        decimal = 0 === decimal ? MAX : decimal += n; // OVERFLOW or MINUS
+        }
+        // convert the result back to binary
+        binary = decimal_2_base(decimal, 2);
+        // update conversions
+        setConversions(binary);
+        // update bits
+        for (let i = 0; i < binary.length; i++) {
+        let digit = binary.substr(i, 1);
+        document.getElementById('digit' + i).value = digit;
+        if (digit === "1") {
+            document.getElementById('bulb' + i).src = IMAGE_ON;
+            document.getElementById('butt' + i).innerHTML = MSG_OFF;
+        } else {
+            document.getElementById('bulb' + i).src = IMAGE_OFF;
+            document.getElementById('butt' + i).innerHTML = MSG_ON;
+        }
+        }
+    }
 </script>
-
 
   </div><a class="u-url" href="/Shivansh-Goel-Fast-Pages/markdown/week%2013/2022/07/07/PBL-binary.html" hidden></a>
 </article>
