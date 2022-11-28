@@ -1,13 +1,9 @@
 ---
-title: Binary Math 2
-layout: default
-description: A Binary Math illustrative application using HTML, Liquid, and JavaScript.
-permalink: /frontend/binary
-image: /images/binary.png
-categories: [3.B, 3.C, C4.4]
-tags: [html, liquid, javascript]
-week: 13
-type: pbl
+toc: true
+layout: post
+description: PBL BInary File
+categories: [markdown, Week 13]
+title: PBL Binary File
 ---
 
 <!-- Hack 1: add a character display to text when 8 bits, determine if printable or not printable -->
