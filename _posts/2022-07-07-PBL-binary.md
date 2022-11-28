@@ -6,7 +6,7 @@ categories: [markdown, Week 13]
 title: PBL Binary File
 ---
 
-### Hack #1 - Click the below button to randomly generate a number and convert to Binary, Hex, Decimal and Octal.
+### Hack #1 -
 
 <button name="button" onclick="getRandomBinaryHack1()" style="background-color:green; border-color:blue; color:white">Generate the next random number to convert!!!</button>
 <br/>
@@ -16,13 +16,13 @@ title: PBL Binary File
 <p id="randomOctal" style="background-color:green; color:black">Octal.</p>
 <p id="randomHex" style="background-color:orange; color:black">Hex.</p>
 <br/><br/><br/><br/>
-### Hack #2 - Click the below button to randomly generate a number and convert to hex, decimal to set color.
+### Hack #2 
 <button name="button" onclick="getRandomBinaryHack2()" style="background-color:green; border-color:blue; color:white">Generate the next random number to change color!!!</button>
 <br/>
 <p id="colorBox" style="background-color:purple; color:black">The Color changes</p>
 <p id="colorBoxHex"></p>
 <br/><br/><br/><br/>
-### Hack #3 - Click the below buttons to flip the bits and convert to diffetent formats.
+### Hack #3 - 
 <button name="button" onclick="displayBits()" style="background-color:green; border-color:blue; color:white">Display Bits to flip!!!</button>
 <p id="randomBinaryP" style="background-color:orange; color:black">Binary.</p>
 <p id="randomHexP" style="background-color:orange; color:black">Hex.</p>
@@ -127,20 +127,3 @@ function bitToggle(bit){
 </script>
 
 
-```
-Here is my logic to convert decimal to binary
-− Create an empty string and a decimal number.
-− Iterate through the decimal number while it is greater than 0.
-− To get the last bit of the decimal number, perform bitwise & operation of 1 with decimal number. If the last bit is 1, append “1” in the front of the binary string. Otherwise, append ‘0’ in the front of the binary string.
-− Remove the last bit from the decimal number using the right shift operator.
-Example 
-decimal = 5; //101
-while (decimal > 0) {
-   if (decimal & 1) {
-      binary = "1" + binary;
-   } else {
-      binary = "0" + binary;
-   }
-   decimal = decimal >> 1;
-}
-```
