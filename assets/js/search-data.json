@@ -256,10 +256,21 @@
     
         ,"post23": {
             "title": "Shivansh's first Markdown Post",
-            "content": "Shivansh Goel Mark Down Post . Goals For CSP this year: . Become better at coding | Learn the various computer languages | Become better with websites and computers | .",
+            "content": "Shivansh Goel Mark Down Post . Goals For CSP this year: . Become better at coding | Learn the various computer languages | Become better with websites and computers | Changin for Dokcer Changing for Docker agains | .",
             "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/markdown/week%200/2022/08/21/Shivansh.html",
             "relUrl": "/markdown/week%200/2022/08/21/Shivansh.html",
             "date": " • Aug 21, 2022"
+        }
+        
+    
+  
+    
+        ,"post24": {
+            "title": "Binary Math 2",
+            "content": "Binary Math with Conversions . Plus Binary Octal Hexadecimal Decimal Minus . +1 | 00000000 | 0 | 0 | 0 | -1 | . . .",
+            "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/frontend/binary",
+            "relUrl": "/frontend/binary",
+            "date": " • Jul 7, 2022"
         }
         
     
@@ -342,12 +353,15 @@
   
 
   
+  
+
+  
 
   
   
 
   
-      ,"page15": {
+      ,"page16": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/robots.txt",
