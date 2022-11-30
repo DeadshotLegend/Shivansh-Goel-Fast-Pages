@@ -34,13 +34,15 @@ if age >= 18:
         print('Happy driving!')
 - If Else Statements can be put inside of another if else statement using this layout for psuedo code.
 
-If (condition 1)
-    If (condition 2)
+if (condition 1)
+    if (condition 2)
         first block of statement
-    Else 
+    else 
         second block of statement
-Else
-    If (condition 3)
+else
+    if (condition 3)
         third block of statement
-    Else 
+    else 
         fourth block of statement
+
+### Quick Easy Challenge
