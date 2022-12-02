@@ -184,7 +184,7 @@ Then we are going to create a while loop and within the while loop there will be
 <span class="c1"># Defining a function with a for loop to iterate through the list &quot;values&quot;</span>
 <span class="k">def</span> <span class="nf">length</span><span class="p">(</span><span class="nb">list</span><span class="p">):</span> 
     <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">values</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">name</span> <span class="o">+</span> <span class="s2">&quot;: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">name</span><span class="p">)))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">name</span> <span class="o">+</span> <span class="s2">&quot;: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">name</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&quot; :first letter: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">name</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">+</span> <span class="s2">&quot; :second letter: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">name</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">+</span> <span class="s2">&quot; :third letter: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">name</span><span class="p">[</span><span class="mi">2</span><span class="p">]))</span>
 
 <span class="n">length</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
 </pre></div>
@@ -199,10 +199,10 @@ Then we are going to create a while loop and within the while loop there will be
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>jaden: 5
-max: 3
-dylan: 5
-orlando: 7
+<pre>jaden: 5 :first letter: j :second letter: a :third letter: d
+max: 3 :first letter: m :second letter: a :third letter: x
+dylan: 5 :first letter: d :second letter: y :third letter: l
+orlando: 7 :first letter: o :second letter: r :third letter: l
 </pre>
 </div>
 </div>
