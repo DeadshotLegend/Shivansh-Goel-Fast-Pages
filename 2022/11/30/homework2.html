@@ -142,22 +142,22 @@ Then we are going to create a while loop and within the while loop there will be
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">convert</span><span class="p">(</span><span class="nb">bin</span><span class="p">):</span> <span class="c1"># declare this variable and function</span>
-    <span class="n">result</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span> <span class="c1"># variable which will be outputted later</span>
-    <span class="n">i</span> <span class="o">=</span> <span class="mi">7</span>
-
-    <span class="k">while</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="k">if</span> <span class="nb">bin</span> <span class="o">%</span> <span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="n">i</span><span class="p">)</span> <span class="o">==</span> <span class="nb">bin</span><span class="p">:</span>  <span class="c1"># here we run some while and if loops in order to classify each number as even or odd, and we assign 0 and 1 accordingly.</span>
-            <span class="n">result</span> <span class="o">=</span> <span class="n">result</span> <span class="o">+</span> <span class="s2">&quot;0&quot;</span>
-            <span class="n">i</span> <span class="o">-=</span> <span class="mi">1</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">convert</span><span class="p">(</span><span class="nb">set</span><span class="p">):</span>
+    <span class="n">value</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span> 
+    <span class="n">num</span> <span class="o">=</span> <span class="mi">7</span>
+<span class="c1"># Second part of the program is devolping a while loop with an if else statement block put within this while loop</span>
+    <span class="k">while</span> <span class="n">num</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">set</span> <span class="o">%</span> <span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="n">num</span><span class="p">)</span> <span class="o">==</span> <span class="nb">set</span><span class="p">:</span> 
+            <span class="n">value</span> <span class="o">=</span> <span class="n">value</span> <span class="o">+</span> <span class="s2">&quot;0&quot;</span>
+            <span class="n">num</span> <span class="o">-=</span> <span class="mi">1</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="n">result</span> <span class="o">=</span> <span class="n">result</span> <span class="o">+</span> <span class="s2">&quot;1&quot;</span>
-            <span class="nb">bin</span> <span class="o">-=</span> <span class="mi">2</span><span class="o">**</span><span class="n">i</span>
-            <span class="n">i</span> <span class="o">-=</span> <span class="mi">1</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="n">value</span> <span class="o">+</span> <span class="s2">&quot;1&quot;</span>
+            <span class="nb">set</span> <span class="o">-=</span> <span class="mi">2</span><span class="o">**</span><span class="n">i</span>
+            <span class="n">num</span> <span class="o">-=</span> <span class="mi">1</span>
 
-    <span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span> <span class="c1"># final print of the result, in binary</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> 
 
-<span class="n">convert</span><span class="p">(</span><span class="mi">61</span><span class="p">)</span> <span class="c1"># conversion mechanism</span>
+<span class="n">convert</span><span class="p">(</span><span class="mi">61</span><span class="p">)</span> 
 </pre></div>
 
     </div>
@@ -188,13 +188,14 @@ Then we are going to create a while loop and within the while loop there will be
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;jaden&quot;</span><span class="p">,</span><span class="s2">&quot;max&quot;</span><span class="p">,</span><span class="s2">&quot;dylan&quot;</span><span class="p">,</span><span class="s2">&quot;orlando&quot;</span><span class="p">]</span> <span class="c1"># list which has all the data</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">values</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;jaden&quot;</span><span class="p">,</span><span class="s2">&quot;max&quot;</span><span class="p">,</span><span class="s2">&quot;dylan&quot;</span><span class="p">,</span><span class="s2">&quot;orlando&quot;</span><span class="p">]</span> 
 
-<span class="k">def</span> <span class="nf">length</span><span class="p">(</span><span class="nb">list</span><span class="p">):</span> <span class="c1"># declare the variable and function</span>
-    <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">names</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">name</span> <span class="o">+</span> <span class="s2">&quot;: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">name</span><span class="p">)))</span> <span class="c1"># prints the output of the length of each of the strings in each item in the list.</span>
+<span class="c1"># Defining a function with a for loop to iterate through the list &quot;values&quot;</span>
+<span class="k">def</span> <span class="nf">length</span><span class="p">(</span><span class="nb">list</span><span class="p">):</span> 
+    <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">values</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">name</span> <span class="o">+</span> <span class="s2">&quot;: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">name</span><span class="p">)))</span>
 
-<span class="n">length</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>
+<span class="n">length</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
 </pre></div>
 
     </div>
