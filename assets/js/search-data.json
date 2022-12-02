@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "Title",
-            "content": "Homeowork 2 . Finishing the homework Variables are going to be a variable called num which well be set to 7 Then we are going to create a while loop and within the while loop there will be an if else statement . def convert(value): set = &quot;&quot; led = 7 while led &gt;= 0: if value % (2**led) == value: set = set + &quot;0&quot; led -= 1 else: set = set + &quot;1&quot; value -= 2**led led -= 1 print(set) convert(98) . 01100010 . values = [&quot;jaden&quot;,&quot;max&quot;,&quot;dylan&quot;,&quot;orlando&quot;] # Defining a function with a for loop to iterate through the list &quot;values&quot; def length(list): for name in values: print(name + &quot;: &quot; + str(len(name))) length(values) . jaden: 5 max: 3 dylan: 5 orlando: 7 .",
+            "content": "Homeowork 2 . Finishing the homework Variables are going to be a variable called num which well be set to 7 Then we are going to create a while loop and within the while loop there will be an if else statement . def convert(value): if value &gt; 1: # dividing value by 2 convert(value//2) # Printing the module value when divded by 2 print(value%2, end = &quot;&quot;) convert(240) . 01100010 . values = [&quot;jaden&quot;,&quot;max&quot;,&quot;dylan&quot;,&quot;orlando&quot;] # Defining a function with a for loop to iterate through the list &quot;values&quot; def length(list): for name in values: print(name + &quot;: &quot; + str(len(name))) length(values) . jaden: 5 max: 3 dylan: 5 orlando: 7 .",
             "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/2022/11/30/homework2.html",
             "relUrl": "/2022/11/30/homework2.html",
             "date": " • Nov 30, 2022"
