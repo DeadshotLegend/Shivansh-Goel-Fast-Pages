@@ -465,7 +465,7 @@ Execution time: 5162.384986877441 ms
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">binarySearch</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>            <span class="c1"># Parameters: array is the given array and target is what we are looking for</span>
-    <span class="n">low</span> <span class="o">=</span> <span class="mi">0</span>                                 <span class="c1"># the starting lower bound</span>
+    <span class="n">low</span> <span class="o">=</span> <span class="mi">0</span>                                <span class="c1"># the starting lower bound</span>
     <span class="n">high</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">array</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span>                     <span class="c1"># the starting upper bound</span>
     <span class="k">while</span> <span class="n">high</span> <span class="o">&gt;=</span> <span class="n">low</span><span class="p">:</span>                      <span class="c1"># we will keep running until we run out of possible subarrays...</span>
         <span class="n">mid</span> <span class="o">=</span> <span class="p">(</span><span class="n">high</span> <span class="o">+</span> <span class="n">low</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>             <span class="c1">#   define the middle of the list to be the item at the index of the average of the lower and upper bound</span>

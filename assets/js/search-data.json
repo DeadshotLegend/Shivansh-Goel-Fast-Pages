@@ -4,9 +4,9 @@
         "post0": {
             "title": "Unit 3 Lesson 7 Nested Conditionals",
             "content": "Nested Conditional Statements . Nested Conditional Statements consist of conditional statemetns within conditional statements. | Flow Chart of a Nested Conditional Statement includes: | . if conditionA: # Code here executes when &#39;conditionA&#39; is True else: # Code that runs when &#39;conditionA&#39; is False if conditionB: # Code that runs when &#39;conditionA&#39; is False # and &#39;conditionB&#39; is True . Example of nested conditional in python: . n=int(input(&#39;Enter marks: &#39;)) # checking the conditions if n&gt;=75: if n &gt;=95: print(&#39;Excellent&#39;) else: print(&#39;Pass&#39;) else: print(&#39;Fail&#39;) . If Else Statements can be put inside of another if else statement using this layout for psuedo code. | . if (condition 1) if (condition 2) #first block of statement else #second block of statement else if (condition 3) #third block of statement else #fourth block of statement . Challenge #1: Create your own Nested Conditional, with a if/else statement inside the else code of an if/else statement. . def function(x, y, z): if() #Code here if() #Code here else #Code here else if() #Code here else #Code here . Challenge #2: Create your own Nested Conditional with operators and comparing values . Ex: . .",
-            "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/fastpages/big%20idea%203/2022/12/05/.7-Nested-Conditionals.html",
-            "relUrl": "/fastpages/big%20idea%203/2022/12/05/.7-Nested-Conditionals.html",
-            "date": " • Dec 5, 2022"
+            "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/fastpages/big%20idea%203/2022/12/06/.7-Nested-Conditionals.html",
+            "relUrl": "/fastpages/big%20idea%203/2022/12/06/.7-Nested-Conditionals.html",
+            "date": " • Dec 6, 2022"
         }
         
     
