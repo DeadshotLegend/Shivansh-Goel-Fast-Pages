@@ -411,15 +411,29 @@ carrots
 <span class="p">]</span>
 
 <span class="k">def</span> <span class="nf">binary_convert</span><span class="p">(</span><span class="n">binary</span><span class="p">):</span>
-    <span class="n">var</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">var1</span> <span class="o">=</span> <span class="p">[]</span>
-    
-    <span class="k">for</span> <span class="n">var1</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">binary</span><span class="p">)):</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">num</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">binary</span><span class="p">):</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">binary</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="mi">2</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">100</span><span class="p">):</span>
+            <span class="n">num</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">binary</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="mi">2</span><span class="p">))</span>
+        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">num</span>
+
+<span class="n">decimallist</span> <span class="o">=</span> <span class="n">binary_convert</span><span class="p">(</span><span class="n">binarylist</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">decimallist</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">binary_convert2</span><span class="p">(</span><span class="n">binary</span><span class="p">):</span>
+    <span class="n">num</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">binary</span><span class="p">)):</span>
         <span class="k">if</span> <span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">binary</span><span class="p">[</span><span class="n">x</span><span class="p">],</span> <span class="mi">2</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">100</span><span class="p">):</span>
-            <span class="n">var1</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">binary</span><span class="p">[</span><span class="n">x</span><span class="p">],</span> <span class="mi">2</span><span class="p">))</span>
-    <span class="k">return</span> <span class="n">var1</span>
-    <span class="k">pass</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">var1</span><span class="p">)</span>
+            <span class="n">num</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">binary</span><span class="p">[</span><span class="n">x</span><span class="p">],</span> <span class="mi">2</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">num</span>
+
+<span class="n">decimallist2</span> <span class="o">=</span> <span class="n">binary_convert2</span><span class="p">(</span><span class="n">binarylist</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">decimallist2</span><span class="p">)</span>
+
     <span class="c1">#use this function to convert every binary value in binarylist to decimal</span>
     <span class="c1">#afterward, get rid of the values that are greater than 100 in decimal</span>
 
@@ -435,20 +449,10 @@ carrots
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[15], line 14</span>
-<span class="ansi-green-intense-fg ansi-bold">     12</span>     return var1
-<span class="ansi-green-intense-fg ansi-bold">     13</span>     pass
-<span class="ansi-green-fg">---&gt; 14</span> print(var1)
-<span class="ansi-green-intense-fg ansi-bold">     15</span>     #use this function to convert every binary value in binarylist to decimal
-<span class="ansi-green-intense-fg ansi-bold">     16</span>     #afterward, get rid of the values that are greater than 100 in decimal
-<span class="ansi-green-intense-fg ansi-bold">     17</span> 
-<span class="ansi-green-intense-fg ansi-bold">     18</span> #when done, print the results
-
-<span class="ansi-red-fg">NameError</span>: name &#39;var1&#39; is not defined</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[73, 55]
+[73, 55]
+</pre>
 </div>
 </div>
 
