@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -220,6 +220,12 @@ else:
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="This-is-the-Collatz-Conjecture-Challenge:">This is the Collatz Conjecture Challenge:<a class="anchor-link" href="#This-is-the-Collatz-Conjecture-Challenge:"> </a></h3>
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -270,6 +276,42 @@ else:
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Overview">Overview<a class="anchor-link" href="#Overview"> </a></h2><p>As we've seen in Unit 4.1, an IP address is a 32 bit number that uniquely identifies each device. (See <a href="https://apclassroom.collegeboard.org/103/home?apd=n5rz22pu2h&amp;unit=4">this</a> for</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>a recap). Something extra is that an IP address also comes with a subnet mask. A subnet mask is also a 32 bit number that identifies what network an IP address in in through a process that uses the bitwise AND.</p>
+<p>In ANDing:</p>
+<p>0 + 0 = 0</p>
+<p>0 + 1 = 0</p>
+<p>1 + 0 = 0</p>
+<p>1 + 1 = 1</p>
+<p><br />
+The following are the steps to determine the network that an IP address is in given the subnet mask:</p>
+<p>Example: IP address: 192.168.0.1</p>
+<p>Subnet mask: 255.255.255.0</p>
+<ol>
+<li>Convert the IP address into binary: 192.168.0.1 -&gt; 11000000.10101000.00000000.00000001</li>
+<li>Convert the subnet mask into binary: 255.255.255.0 -&gt; 11111111.11111111.11111111.00000000</li>
+<li>Do a bitwise AND operation on the binary IP address and subnet mask: </li>
+</ol>
+
+<pre><code> 11000000.10101000.00000000.00000001
++11111111.11111111.11111111.00000000
+=11000000.10101000.00000000.00000000</code></pre>
+<ol>
+<li>Convert the result back to decimal: 11000000.10101000.00000000.00000000 -&gt; 192.168.0.0</li>
+</ol>
+<p>The network address is <code>192.168.0.0</code></p>
+
+</div>
+</div>
+</div>
 </div>
 
 
