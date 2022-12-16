@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -156,7 +156,8 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Notes">Notes<a class="anchor-link" href="#Notes"> </a></h2><ul>
-<li>_</li>
+<li>Simply put, a heuristic is a problem-solving approach that utilizes a practical process (commonly referred to as “rule of thumb” or “best practice”) to produce a feasible solution that is good enough to quickly solve a particular problem and achieve immediate goals – but not necessarily an optimal solution.</li>
+<li>In computer science terms efficiency is the ratio of useful work to resources (processor and storage) expended. In other words, the ratio of the output to the input of a given system.</li>
 </ul>
 
 </div>
@@ -183,14 +184,10 @@ Fully programmed solution will improve your grade, at a minimum show that you tr
 <span class="n">valuelist</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span><span class="mi">18</span><span class="p">,</span><span class="mi">21</span><span class="p">]</span>
 <span class="k">def</span> <span class="nf">isvalue</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="n">array</span><span class="p">):</span>
     <span class="c1">#--------------------</span>
-    <span class="n">exists</span> <span class="o">=</span> <span class="kc">False</span>
-    <span class="k">while</span> <span class="n">exists</span> <span class="o">==</span> <span class="kc">False</span><span class="p">:</span>
-        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">array</span><span class="p">)):</span>
-            <span class="k">if</span> <span class="n">value</span> <span class="o">==</span> <span class="n">array</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
-                <span class="n">exists</span> <span class="o">=</span> <span class="kc">True</span>
-        <span class="k">if</span> <span class="n">exists</span> <span class="o">==</span> <span class="kc">False</span><span class="p">:</span>
-            <span class="k">return</span> <span class="n">exists</span>
-    <span class="k">return</span> <span class="n">exists</span>
+    <span class="k">if</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">array</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">True</span> <span class="c1">### These are the changes I made which are more effecient </span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">False</span>
     <span class="c1">#--------------------</span>
 <span class="n">starttime</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100000</span><span class="p">):</span>
@@ -210,7 +207,7 @@ Fully programmed solution will improve your grade, at a minimum show that you tr
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>0.7893083095550537 seconds
+<pre>0.2981603145599365 seconds
 </pre>
 </div>
 </div>
@@ -230,7 +227,7 @@ Fully programmed solution will improve your grade, at a minimum show that you tr
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Notes">Notes<a class="anchor-link" href="#Notes"> </a></h2><ul>
-<li>_</li>
+<li>Undecidable Problems are important for certain scenarios, for example: software that calculates climate any other software might error-out given a positive input, then opposite its output. If you fed this software into itself, some thing bizarre might show up. Say step one stated this system might have an error, the second one step might say no error. This proves step one became wrong, developing a paradox. Situations like this show up each day, whilst a laptop need to bet whilst to prevent loading a internet site that could by no means load. This is why net interctions will day trip if it takes too long.</li>
 </ul>
 
 </div>
