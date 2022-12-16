@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      13 min read
+      17 min read
     
 </span></p>
 
@@ -285,7 +285,7 @@ Tails
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
 
 <span class="k">def</span> <span class="nf">randomnum</span><span class="p">():</span> <span class="c1"># function for generating random int</span>
-    <span class="n">int1</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
+    <span class="n">int1</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">255</span><span class="p">)</span>
     <span class="k">return</span><span class="p">(</span><span class="n">int1</span><span class="p">)</span>
     
 
@@ -590,6 +590,279 @@ Be creative! Think about instances in your own life, science, puzzles that can b
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">national</span><span class="p">():</span>
+    <span class="n">x</span><span class="o">=</span><span class="mi">0</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"There are 17 games in the NFL"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"See which ones you win lose, or draw"</span><span class="p">)</span>
+    <span class="n">game1</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"win"</span><span class="p">,</span> <span class="s2">"lose"</span><span class="p">,</span> <span class="s2">"draw"</span><span class="p">]</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">a</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">x</span> <span class="o">+</span> <span class="mi">3</span>
+    <span class="k">elif</span> <span class="n">a</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span>
+
+
+    <span class="n">game2</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"win"</span><span class="p">,</span> <span class="s2">"lose"</span><span class="p">,</span> <span class="s2">"draw"</span><span class="p">]</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">b</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">x</span> <span class="o">+</span> <span class="mi">3</span>
+    <span class="k">elif</span> <span class="n">a</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span>
+
+
+
+    <span class="n">game3</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"win"</span><span class="p">,</span> <span class="s2">"lose"</span><span class="p">,</span> <span class="s2">"draw"</span><span class="p">]</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">c</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">x</span> <span class="o">+</span> <span class="mi">3</span>
+    <span class="k">elif</span> <span class="n">a</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span>
+
+
+
+    <span class="n">game4</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"win"</span><span class="p">,</span> <span class="s2">"lose"</span><span class="p">,</span> <span class="s2">"draw"</span><span class="p">]</span>
+    <span class="n">d</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">d</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">x</span> <span class="o">+</span> <span class="mi">3</span>
+    <span class="k">elif</span> <span class="n">a</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span>
+
+
+
+    <span class="n">game5</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"win"</span><span class="p">,</span> <span class="s2">"lose"</span><span class="p">,</span> <span class="s2">"draw"</span><span class="p">]</span>
+    <span class="n">e</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">e</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">x</span> <span class="o">+</span> <span class="mi">3</span>
+    <span class="k">elif</span> <span class="n">e</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span>
+
+
+
+    <span class="n">game6</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"win"</span><span class="p">,</span> <span class="s2">"lose"</span><span class="p">,</span> <span class="s2">"draw"</span><span class="p">]</span>
+    <span class="n">f</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">f</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">x</span> <span class="o">+</span> <span class="mi">3</span>
+    <span class="k">elif</span> <span class="n">f</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span>
+
+
+
+    <span class="n">game7</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"win"</span><span class="p">,</span> <span class="s2">"lose"</span><span class="p">,</span> <span class="s2">"draw"</span><span class="p">]</span>
+    <span class="n">g</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">g</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">x</span> <span class="o">+</span> <span class="mi">3</span>
+    <span class="k">elif</span> <span class="n">g</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span>
+
+
+
+    <span class="n">game8</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"win"</span><span class="p">,</span> <span class="s2">"lose"</span><span class="p">,</span> <span class="s2">"draw"</span><span class="p">]</span>
+    <span class="n">h</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">h</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">x</span> <span class="o">+</span> <span class="mi">3</span>
+    <span class="k">elif</span> <span class="n">h</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span>
+
+
+
+    <span class="n">game9</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"win"</span><span class="p">,</span> <span class="s2">"lose"</span><span class="p">,</span> <span class="s2">"draw"</span><span class="p">]</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">i</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">x</span> <span class="o">+</span> <span class="mi">3</span>
+    <span class="k">elif</span> <span class="n">i</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span>
+
+
+
+    <span class="n">game10</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"win"</span><span class="p">,</span> <span class="s2">"lose"</span><span class="p">,</span> <span class="s2">"draw"</span><span class="p">]</span>
+    <span class="n">j</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">j</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">x</span> <span class="o">+</span> <span class="mi">3</span>
+    <span class="k">elif</span> <span class="n">j</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span>
+
+
+
+    <span class="n">game11</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"win"</span><span class="p">,</span> <span class="s2">"lose"</span><span class="p">,</span> <span class="s2">"draw"</span><span class="p">]</span>
+    <span class="n">k</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">k</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">x</span> <span class="o">+</span> <span class="mi">3</span>
+    <span class="k">elif</span> <span class="n">k</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span>
+
+
+
+    <span class="n">game12</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"win"</span><span class="p">,</span> <span class="s2">"lose"</span><span class="p">,</span> <span class="s2">"draw"</span><span class="p">]</span>
+    <span class="n">l</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">l</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">x</span> <span class="o">+</span> <span class="mi">3</span>
+    <span class="k">elif</span> <span class="n">l</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span>
+
+
+
+    <span class="n">game13</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"win"</span><span class="p">,</span> <span class="s2">"lose"</span><span class="p">,</span> <span class="s2">"draw"</span><span class="p">]</span>
+    <span class="n">m</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">m</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">x</span> <span class="o">+</span> <span class="mi">3</span>
+    <span class="k">elif</span> <span class="n">m</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span>
+
+
+
+    <span class="n">game14</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"win"</span><span class="p">,</span> <span class="s2">"lose"</span><span class="p">,</span> <span class="s2">"draw"</span><span class="p">]</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">n</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">x</span> <span class="o">+</span> <span class="mi">3</span>
+    <span class="k">elif</span> <span class="n">n</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span>
+
+
+
+    <span class="n">game15</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"win"</span><span class="p">,</span> <span class="s2">"lose"</span><span class="p">,</span> <span class="s2">"draw"</span><span class="p">]</span>
+    <span class="n">o</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">o</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">x</span> <span class="o">+</span> <span class="mi">3</span>
+    <span class="k">elif</span> <span class="n">o</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span>
+
+
+
+    <span class="n">game16</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"win"</span><span class="p">,</span> <span class="s2">"lose"</span><span class="p">,</span> <span class="s2">"draw"</span><span class="p">]</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">p</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">x</span> <span class="o">+</span> <span class="mi">3</span>
+    <span class="k">elif</span> <span class="n">p</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span>
+
+
+
+    <span class="n">game17</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"win"</span><span class="p">,</span> <span class="s2">"lose"</span><span class="p">,</span> <span class="s2">"draw"</span><span class="p">]</span>
+    <span class="n">q</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">q</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">x</span> <span class="o">+</span> <span class="mi">3</span>
+    <span class="k">elif</span> <span class="n">q</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span>
+
+
+    
+    <span class="c1">### Printing the various outcomes</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Game 1 is a: "</span> <span class="o">+</span> <span class="n">game1</span><span class="p">[</span><span class="n">a</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Game 2 is a: "</span> <span class="o">+</span> <span class="n">game2</span><span class="p">[</span><span class="n">b</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Game 3 is a: "</span> <span class="o">+</span> <span class="n">game3</span><span class="p">[</span><span class="n">c</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Game 4 is a: "</span> <span class="o">+</span> <span class="n">game4</span><span class="p">[</span><span class="n">d</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Game 5 is a: "</span> <span class="o">+</span> <span class="n">game5</span><span class="p">[</span><span class="n">e</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Game 6 is a: "</span> <span class="o">+</span> <span class="n">game6</span><span class="p">[</span><span class="n">f</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Game 7 is a: "</span> <span class="o">+</span> <span class="n">game7</span><span class="p">[</span><span class="n">g</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Game 8 is a: "</span> <span class="o">+</span> <span class="n">game8</span><span class="p">[</span><span class="n">h</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Game 9 is a: "</span> <span class="o">+</span> <span class="n">game9</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Game 10 is a: "</span> <span class="o">+</span> <span class="n">game10</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Game 11 is a: "</span> <span class="o">+</span> <span class="n">game11</span><span class="p">[</span><span class="n">k</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Game 12 is a: "</span> <span class="o">+</span> <span class="n">game12</span><span class="p">[</span><span class="n">l</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Game 13 is a: "</span> <span class="o">+</span> <span class="n">game13</span><span class="p">[</span><span class="n">m</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Game 14 is a: "</span> <span class="o">+</span> <span class="n">game14</span><span class="p">[</span><span class="n">n</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Game 15 is a: "</span> <span class="o">+</span> <span class="n">game15</span><span class="p">[</span><span class="n">o</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Game 16 is a: "</span> <span class="o">+</span> <span class="n">game16</span><span class="p">[</span><span class="n">p</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Game 17 is a: "</span> <span class="o">+</span> <span class="n">game17</span><span class="p">[</span><span class="n">q</span><span class="p">])</span>
+    <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">30</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"You are going to the playoffs, you got enough points"</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="mi">10</span><span class="o">&lt;</span><span class="n">x</span><span class="o">&lt;</span><span class="mi">30</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Solid end to the season, but no playoffs"</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Prepare for the Draft!"</span><span class="p">)</span>
+
+
+
+
+
+
+
+    
+
+<span class="n">national</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>There are 17 games in the NFL
+See which ones you win lose, or draw
+Game 1 is a: draw
+Game 2 is a: win
+Game 3 is a: win
+Game 4 is a: draw
+Game 5 is a: lose
+Game 6 is a: win
+Game 7 is a: win
+Game 8 is a: draw
+Game 9 is a: lose
+Game 10 is a: lose
+Game 11 is a: draw
+Game 12 is a: draw
+Game 13 is a: win
+Game 14 is a: lose
+Game 15 is a: draw
+Game 16 is a: lose
+Game 17 is a: win
+Solid end to the season, but no playoffs
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
