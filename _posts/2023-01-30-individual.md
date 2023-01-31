@@ -23,3 +23,6 @@ Computers can help students in school. Computer skills can lead to good jobs. Co
 
 ### 5.2
 Among the problems students have with controlling computational time is the problem of dopamine. Many problems are what I deal with because I don't have time to maintain my attention while I have to do my schoolwork. Because games give me more dopamine than school work, my brain prefers playing video games and it gives me that feeling/impulse more than looking at textbooks. One way  to avoid playing  is to set Screen Time to limit the amount of time you spend playing games. I also devoted a certain amount of time  to my studies each day.
+
+### Blog Reflection
+The Reflection for this assignment is that there are a lot of people that have different devices which can affect how people interact both online and in person. People can also be affected mentally and physically due to different dopmaine given through devices. There are a lot of benfits for computerr science but there are also a lot of cons for computer science.
