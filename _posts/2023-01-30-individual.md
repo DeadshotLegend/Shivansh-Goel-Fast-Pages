@@ -11,6 +11,7 @@ Three advantages or disadvantages of CS:
 Increased Efficiency and Productivity: On the one hand, computer technology has altered the way we communicate, handle data, and solve problems at work and in our daily lives. However, it has also resulted in job automation and the loss of many manual labor positions, which has reduced the number of employment prospects. Enhanced Information Access and Education: People may now access educational materials and information in ways that were before inconceivable because to the internet and computer technology. The dissemination of inaccurate and misleading information, as well as an increase in distractions and a shortening of attention spans, have all been impacted by this, though. Globalization and increased connectivity are on the rise. People may now connect and communicate in ways that were previously impractical, overcoming cultural and geographic barriers. Greater collaboration and understanding between various communities are the outcome of this, but it has also facilitated the spread of hate speech and cyberbullying and reduced in-person encounters.
 
 <img src='{{ "/images/digitaldopmaine.PNG" | relative_url }}' width='480' alt='Changed theme to Architect'>
+
 ### Dopamine Problems 
 Having too much dopamine — or too much dopamine concentrated in some parts of the brain and not enough in other parts — is linked to being more competitive, aggressive and having poor impulse control. It can lead to conditions that include ADHD, binge eating, addiction and gambling.
 
