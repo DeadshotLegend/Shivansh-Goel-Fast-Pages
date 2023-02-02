@@ -269,76 +269,64 @@ window.onload = wrap_img;
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Player O turn
-- - - - - 
-- - - - - 
-- - - - - 
-- - - - - 
-- - - - - 
+- - - - - - - 
+- - - - - - - 
+- - - - - - - 
+- - - - - - - 
+- - - - - - - 
+- - - - - - - 
+- - - - - - - 
 
 Player X turn
-- - O - - 
-- - - - - 
-- - - - - 
-- - - - - 
-- - - - - 
+- O - - - - - 
+- - - - - - - 
+- - - - - - - 
+- - - - - - - 
+- - - - - - - 
+- - - - - - - 
+- - - - - - - 
 
 Player O turn
-- - O - - 
-- - - - - 
-X - - - - 
-- - - - - 
-- - - - - 
+- O - - - - - 
+- - - - - - - 
+- - - - - - - 
+- - - - - - - 
+- - - - - X - 
+- - - - - - - 
+- - - - - - - 
 
 Player X turn
-- O O - - 
-- - - - - 
-X - - - - 
-- - - - - 
-- - - - - 
-
-Player O turn
-- O O - - 
-- - - - - 
-X - - - - 
-- - - - X 
-- - - - - 
-
-Player X turn
-O O O - - 
-- - - - - 
-X - - - - 
-- - - - X 
-- - - - - 
-
-Player O turn
-O O O - - 
-- - - - - 
-X - - - - 
-- - - - X 
-- - - - X 
-
-Player X turn
-O O O O - 
-- - - - - 
-X - - - - 
-- - - - X 
-- - - - X 
-
-Player O turn
-O O O O - 
-- - - - - 
-X - - - - 
-- - - - X 
-- - X - X 
-
-Player O wins the game!
-
-O O O O O 
-- - - - - 
-X - - - - 
-- - - - X 
-- - X - X 
+O O - - - - - 
+- - - - - - - 
+- - - - - - - 
+- - - - - - - 
+- - - - - X - 
+- - - - - - - 
+- - - - - - - 
 </pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">ValueError</span>                                Traceback (most recent call last)
+Cell <span class="ansi-green-fg">In[5], line 124</span>
+<span class="ansi-green-intense-fg ansi-bold">    122</span> # starting the game
+<span class="ansi-green-intense-fg ansi-bold">    123</span> tic_tac_toe = TicTacToe()
+<span class="ansi-green-fg">--&gt; 124</span> tic_tac_toe.start()
+
+Cell <span class="ansi-green-fg">In[5], line 97</span>, in <span class="ansi-cyan-fg">TicTacToe.start</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">     94</span> self.show_board()
+<span class="ansi-green-intense-fg ansi-bold">     96</span> # taking user input
+<span class="ansi-green-fg">---&gt; 97</span> row, col = list(
+<span class="ansi-green-intense-fg ansi-bold">     98</span>     map(int, input(&#34;Enter row and column numbers to fix spot: &#34;).split()))
+<span class="ansi-green-intense-fg ansi-bold">     99</span> print()
+<span class="ansi-green-intense-fg ansi-bold">    101</span> # fixing the spot
+
+<span class="ansi-red-fg">ValueError</span>: not enough values to unpack (expected 2, got 0)</pre>
 </div>
 </div>
 
