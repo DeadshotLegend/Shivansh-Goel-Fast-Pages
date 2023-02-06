@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      2 min read
     
 </span></p>
 
@@ -288,60 +288,6 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">TclError</span>                                  Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[2], line 11</span>
-<span class="ansi-green-intense-fg ansi-bold">      7</span> high_score = 0
-<span class="ansi-green-intense-fg ansi-bold">     10</span> # Creating a window screen
-<span class="ansi-green-fg">---&gt; 11</span> wn = turtle.Screen()
-<span class="ansi-green-intense-fg ansi-bold">     12</span> wn.title(&#34;Snake Game&#34;)
-<span class="ansi-green-intense-fg ansi-bold">     13</span> wn.bgcolor(&#34;blue&#34;)
-
-File <span class="ansi-green-fg">/usr/lib/python3.8/turtle.py:3663</span>, in <span class="ansi-cyan-fg">Screen</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">   3659</span> &#34;&#34;&#34;Return the singleton screen object.
-<span class="ansi-green-intense-fg ansi-bold">   3660</span> If none exists at the moment, create a new one and return it,
-<span class="ansi-green-intense-fg ansi-bold">   3661</span> else return the existing one.&#34;&#34;&#34;
-<span class="ansi-green-intense-fg ansi-bold">   3662</span> if Turtle._screen is None:
-<span class="ansi-green-fg">-&gt; 3663</span>     Turtle._screen = _Screen()
-<span class="ansi-green-intense-fg ansi-bold">   3664</span> return Turtle._screen
-
-File <span class="ansi-green-fg">/usr/lib/python3.8/turtle.py:3679</span>, in <span class="ansi-cyan-fg">_Screen.__init__</span><span class="ansi-blue-fg">(self)</span>
-<span class="ansi-green-intense-fg ansi-bold">   3672</span> def __init__(self):
-<span class="ansi-green-intense-fg ansi-bold">   3673</span>     # XXX there is no need for this code to be conditional,
-<span class="ansi-green-intense-fg ansi-bold">   3674</span>     # as there will be only a single _Screen instance, anyway
-<span class="ansi-green-intense-fg ansi-bold">   3675</span>     # XXX actually, the turtle demo is injecting root window,
-<span class="ansi-green-intense-fg ansi-bold">   3676</span>     # so perhaps the conditional creation of a root should be
-<span class="ansi-green-intense-fg ansi-bold">   3677</span>     # preserved (perhaps by passing it as an optional parameter)
-<span class="ansi-green-intense-fg ansi-bold">   3678</span>     if _Screen._root is None:
-<span class="ansi-green-fg">-&gt; 3679</span>         _Screen._root = self._root = _Root()
-<span class="ansi-green-intense-fg ansi-bold">   3680</span>         self._root.title(_Screen._title)
-<span class="ansi-green-intense-fg ansi-bold">   3681</span>         self._root.ondestroy(self._destroy)
-
-File <span class="ansi-green-fg">/usr/lib/python3.8/turtle.py:435</span>, in <span class="ansi-cyan-fg">_Root.__init__</span><span class="ansi-blue-fg">(self)</span>
-<span class="ansi-green-intense-fg ansi-bold">    434</span> def __init__(self):
-<span class="ansi-green-fg">--&gt; 435</span>     TK.Tk.__init__(self)
-
-File <span class="ansi-green-fg">/usr/lib/python3.8/tkinter/__init__.py:2270</span>, in <span class="ansi-cyan-fg">Tk.__init__</span><span class="ansi-blue-fg">(self, screenName, baseName, className, useTk, sync, use)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2268</span>         baseName = baseName + ext
-<span class="ansi-green-intense-fg ansi-bold">   2269</span> interactive = 0
-<span class="ansi-green-fg">-&gt; 2270</span> self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
-<span class="ansi-green-intense-fg ansi-bold">   2271</span> if useTk:
-<span class="ansi-green-intense-fg ansi-bold">   2272</span>     self._loadtk()
-
-<span class="ansi-red-fg">TclError</span>: no display name and no $DISPLAY environment variable</pre>
-</div>
-</div>
-
 </div>
 </div>
 
