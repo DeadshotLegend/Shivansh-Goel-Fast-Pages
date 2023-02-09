@@ -37,3 +37,7 @@ In the vidoe, the HP Computer was designed to track the face of a person and fol
 
 ### Crowd - Sourcing
 Some examples of us students Crown sourcing would be github. Crowd Sourcing has multiple advantages and disadvantages. Crowdsourcing involves a large group of dispersed participants contributing or producing goods or services—including ideas, votes, micro-tasks, and finances—for payment or as volunteers. Advantages of Croudsourcing would be that a large population could help each other by sharing important pieces of informatiosn such as nonfiction, fiction, and code. Some disadvantagse of Crowdsourcing would be that there is a lot of imporant information that should be limtied but it is inot. Also, the sharing of code on Github can lead to plagirlization as well as people not learning properlty because they can just look online or at other people's work in their various different projects. Lastly, one of the huggest disadvantage would be that there is a lot of available resources which is not supposed to be their which will only hinder the learning of the students in their various different classes.
+
+
+### 5.5 Legal and Ethical Concerns
+Copyright is important for making sure that other people do not have the ability to take your information.
