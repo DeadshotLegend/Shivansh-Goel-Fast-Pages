@@ -221,4 +221,4 @@ def initGamers():
             db.session.remove()
             print(f"Records exist, duplicate email, or error: {gamer.uid}")
 
-#initGamers()
+initGamers()
