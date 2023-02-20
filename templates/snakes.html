@@ -1,0 +1,187 @@
+{% extends "layouts/base.html" %}
+{% set project = "Home" %}
+ 
+{% block body %}
+    <!-- Start of body content specific to page -->
+    <div class="px-5 py-5 mx-auto">
+        <h1 class="text-white"><strong>Python Home Page</strong></h1>
+        <div class="row">
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-body">
+                    <h5 class="card-title">Gamers</h5>
+                    <p id="gamers"></p>
+                   
+                    <p class="card-text">
+                        <script>
+                            const team1Vals = {};
+                            const team2Vals = {};
+
+                            function sortTable(n) {
+                                var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+                                table = document.getElementById("lboard");
+                                switching = true;
+                                // Set the sorting direction to ascending:
+                                dir = "desc";
+                                /* Make a loop that will continue until
+                                no switching has been done: */
+                                while (switching) {
+                                    // Start by saying: no switching is done:
+                                    switching = false;
+                                    rows = table.rows;
+                                    /* Loop through all table rows (except the
+                                    first, which contains table headers): */
+                                    for (i = 1; i < (rows.length - 1); i++) {
+                                        // Start by saying there should be no switching:
+                                        shouldSwitch = false;
+                                        /* Get the two elements you want to compare,
+                                        one from current row and one from the next: */
+                                        x = rows[i].getElementsByTagName("TD")[n];
+                                        y = rows[i + 1].getElementsByTagName("TD")[n];
+                                        /* Check if the two rows should switch place,
+                                        based on the direction, asc or desc: */
+                                        if (dir == "asc") {
+                                            if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                                                // If so, mark as a switch and break the loop:
+                                                shouldSwitch = true;
+                                                break;
+                                            }
+                                        } else if (dir == "desc") {
+                                            if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                                                // If so, mark as a switch and break the loop:
+                                                shouldSwitch = true;
+                                                break;
+                                            }
+                                        }
+                                    }
+                                    if (shouldSwitch) {
+                                        /* If a switch has been marked, make the switch
+                                        and mark that a switch has been done: */
+                                        rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                                        switching = true;
+                                        // Each time a switch is done, increase this count by 1:
+                                        switchcount ++;
+                                    } else {
+                                        /* If no switching has been done AND the direction is "asc",
+                                        set the direction to "desc" and run the while loop again. */
+                                        if (switchcount == 0 && dir == "asc") {
+                                            dir = "desc";
+                                            switching = true;
+                                        }
+                                    }
+                                }
+                            }
+
+                            function showStats(teamName, statId){
+                                const dbParam = JSON.stringify({table:"teams",limit:20});
+                                const xmlhttp = new XMLHttpRequest();
+                                xmlhttp.onload = function() {
+                                    console.debug(this.responseText);
+                                    const team = JSON.parse(this.responseText);
+                                    let text = "<table border='1' style='border-collapse: separate;'><tr><th>Team</th><td>" + team.team + "</td></tr><tr><th>Division</th><td>" + team.division + "</td></tr><tr><th>Games Played</th><td>" + team.gamesplayed + "</td></tr><tr><th>Games Won</th><td>" + team.gameswon + "</td></tr><tr><th>Games Lost</th><td>" + team.gameslost + "</td></tr><tr><th>Games Drawn</th><td>" + team.gamesdrawn + "</td></tr><tr><th>Games Played At Home</th><td>" + team.gamesplayedathome + "</td></tr><tr><th>Games Played Away</th><td>" + team.gamesplayedaway + "</td></tr><tr><th>Games Won At Home</th><td>" + team.gameswonathome + "</td></tr><tr><th>Games Won Away</th><td>" + team.gameswonaway + "</td></tr><tr><th>Games Lost At Home</th><td>" + team.gameslostathome + "</td></tr><tr><th>Games Lost Away</th><td>" + team.gameslostaway + "</td></tr><tr><th>Points For</th><td>" + team.pointsfor + "</td></tr><tr><th>Points Against</th><td>" + team.pointsagainst + "</td></tr><tr><th>Playoffs</th><td>" + team.playoffs + "</td></tr></table>";
+                                    document.getElementById(statId).innerHTML = text;
+
+                                    if (statId == "team1_stats"){
+                                        team1Vals["team"] = team.team;
+                                        team1Vals["gameswon"] = team.gameswon;
+                                        team1Vals["pointsfor"] = team.pointsfor;
+                                        team1Vals["pointsagainst"] = team.pointsagainst;
+                                        team1Vals["playoffs"] = team.playoffs;                
+                                    } else if (statId == "team2_stats"){
+                                        team2Vals["team"] = team.team;
+                                        team2Vals["gameswon"] = team.gameswon;
+                                        team2Vals["pointsfor"] = team.pointsfor;
+                                        team2Vals["pointsagainst"] = team.pointsagainst;
+                                        team2Vals["playoffs"] = team.playoffs;
+                                    }
+                                    compareTeams();
+                                }
+
+                                xmlhttp.open("GET", "/api/nflteam?name="+teamName);
+                                xmlhttp.setRequestHeader("Content-type", "application/team-www-form-urlencoded");
+                                xmlhttp.send("team=" + dbParam);
+                            }
+
+                            const leaderboards = {};
+
+                            function load(){
+                                const dbParam = JSON.stringify({table:"gamers",limit:20});
+                                const xmlhttp = new XMLHttpRequest();
+                                xmlhttp.onload = function() {
+                                    const gamers = JSON.parse(this.responseText);
+                                    let text = "<table border='1' width='100%' style='border-collapse: separate;'><tr><th>Name</th><th>DOB</th><th>Age</th></tr>";
+                                    let text1 = "<table id='lboard' border='1' width='100%' style='border-collapse: separate;'><tr><th>Name</th><th>Date</th><th>Score</th></tr>";
+                                    
+                                    let counter = 0;
+                                    for (let gamer in gamers) {
+                                        let gamerName = gamers[gamer].name;
+                                        text += "<tr><td>" + gamerName + "</td><td>" + gamers[gamer].dob + "</td><td>" + gamers[gamer].age + "</td></tr>";
+                                        console.log(gamerName);
+
+                                        for (let score in gamers[gamer].scores){
+                                            let scoreTemp = {};
+                                            scoreTemp["gamername"] = gamerName;
+                                            let datePlayed = gamers[gamer].scores[score]["dateplayed"];
+                                            let scoreGot = gamers[gamer].scores[score]["score"];
+                                            text1 +="<tr><td>" + gamerName + "</td><td>" +datePlayed + "</td><td>" + scoreGot + "</td></tr>";
+                                            //console.log(gamers[gamer].scores)
+                                            //console.log(gamers[gamer].scores[score]);
+                                            //console.log(gamers[gamer].scores[score]["dateplayed"]);
+                                            //console.log(gamers[gamer].scores[score]["score"]);
+                                            scoreTemp["dateplayed"] = datePlayed;
+                                            scoreTemp["score"] = scoreGot;
+                                            leaderboards[counter++] = scoreTemp;
+                                        }
+                                        
+                                    }
+                                    text += "</table>";
+                                    text1 += "</table>";
+                                    //console.log(Object.keys(leaderboards));
+                                    document.getElementById("gamers").innerHTML = text;
+                                    document.getElementById("leaderboards").innerHTML = text1;
+                                    sortTable(2);
+                                }
+
+                                xmlhttp.open("GET", "/api/gamers/");
+                                xmlhttp.setRequestHeader("Content-type", "application/team-www-form-urlencoded");
+                                xmlhttp.send("team=" + dbParam);
+                            }
+                            
+                            load();
+                        </script>
+                        <!--<table width="100%">
+                            <tr><td>Team</td><td>Challenger</td></tr>
+                            <tr><td id="team1"></td><td id="team2"></td></tr>
+                            <tr><td id="team1_stats"></td><td id="team2_stats"></td></tr>
+                        </table>-->
+                    </p>
+                    <a href="#" class="btn btn-primary">Reload</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    
+                    <div class="card-body">
+                    <h5 class="card-title">Leaderboards</mark></h5>
+                    <p class="card-text">
+                        <p id="leaderboards"></p>
+                    </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    
+                    <div class="card-body">
+                    <h5 class="card-title">Snakes</mark></h5>
+                    <p class="card-text">
+                        <iframe allow="autoplay; fullscreen *; geolocation; microphone; camera; midi; monetization; xr-spatial-tracking; gamepad; gyroscope; accelerometer; xr; cross-origin-isolated" allowtransparency="true" webkitallowfullscreen="true" mozallowfullscreen="true" msallowfullscreen="true" id="game_drop" allowfullscreen="true" src="https://v6p9d9t4.ssl.hwcdn.net/html/7353839/index.html" scrolling="no" frameborder="0"></iframe>
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
