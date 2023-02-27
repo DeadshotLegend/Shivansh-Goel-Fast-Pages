@@ -1,6 +1,6 @@
 ---
 toc: true
-layout: post
+base: post
 description: ExtraCredit 1
 categories: [markdown, Week 0]
 title: ExtraCreditBothZoomMeetings 

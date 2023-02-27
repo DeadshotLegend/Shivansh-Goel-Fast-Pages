@@ -1,6 +1,6 @@
 ---
 toc: true
-layout: post
+base: post
 description: LessonPlanning
 categories: [markdown, Week 13]
 title: LessonPlanning

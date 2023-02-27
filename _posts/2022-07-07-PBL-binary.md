@@ -1,6 +1,6 @@
 ---
 toc: true
-layout: post
+base: post
 description: PBL BInary File
 categories: [markdown, Week 13]
 title: PBL Binary File
