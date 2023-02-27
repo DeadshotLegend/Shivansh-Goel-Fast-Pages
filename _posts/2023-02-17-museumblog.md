@@ -8,7 +8,7 @@ title: Final Museum Blog
 
 ### 1st AP CSP Project That I saw
 - This project was presented by Rachit Jaiswal
-- Rachit Jaiswal project was about 
+- Rachit Jaiswal project was about using 
 
 
 ### 2nd AP CSP Project That I saw
@@ -19,6 +19,8 @@ title: Final Museum Blog
 
 
 ### 3rd AP Project That I saw
+<img src='{{ "/images/shauryapic1.PNG" | relative_url }}' width='480' alt='Changed theme to Architect'>
+<img src='{{ "/images/shauryapic2.PNG" | relative_url }}' width='480' alt='Changed theme to Architect'>
 - This project was presented by Shaurya Goel, included members of Vardaan, Navan, and Justin.
 - This purpose of the project was to allows users to compare different nfl teams and also allows the user to predict the outcome of a particular match. It also offers a visually appealing table where you can see in-depth team statistics for all the different teams. It also has create, update and delete properties.
 - The program allows you to select two different NFL teams (Team + Challenger) from a dropdown menu. When two teams are selected from either menu, the algorithm instantly compares both teams' stats and shows which team is more likely to win, along with each team's individual stats side-by-side. increase.
