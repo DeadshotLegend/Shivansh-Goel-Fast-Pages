@@ -644,17 +644,6 @@
 
   
       ,"page1": {
-          "title": "About Me",
-          "content": "Hello, I am Shivansh Goel and part of APCSP period 5. . I am in 10th grade at Del Norte High School. I am learning Python programming and currently having fun with editing pages using Jupyter and GitHub and Markdown :sunglasses: . The following image is inserted using a Jekyll Liquid Filter for relative URL .",
-          "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/about/",
-          "relUrl": "/about/",
-          "date": ""
-      }
-      
-  
-
-  
-      ,"page2": {
           "title": "APCSP Vocabulary",
           "content": "This APCSP Notes: . def = define a function | import = importing other function for uses | cd = change directory | . .",
           "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/b-vocab/",
@@ -665,7 +654,7 @@
   
 
   
-      ,"page3": {
+      ,"page2": {
           "title": "Submenu",
           "content": "&lt;!Doctype html&gt; . My first Table . What I have learned from APCSP . API . This is my api | . .",
           "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/about/",
@@ -676,7 +665,7 @@
   
 
   
-      ,"page4": {
+      ,"page3": {
           "title": "APCSP Notes",
           "content": "This is the notes for Shivansh Goel: . Week 1 . print function: A way to print meassages in python | If else statement, if is a certain condition and it will produce the stuff inside the code if the condition is met | . Week 2 . lists and dictionaries: ways to put sequence of elements using python code | loops: A way to replay the function when a certain condition is being met (true or false) | . Week 3/4/5 . Learning about Javascript and code.org | In javascript we learned how to create functions. | .",
           "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/notes/",
@@ -687,7 +676,7 @@
   
 
   
-      ,"page5": {
+      ,"page4": {
           "title": "Personalized Study",
           "content": "Find assingments on these links and edit them here: Link to Canas: https://poway.instructure.com/ Link to myplan: https://launchpad.classlink.com/poway Link to GoogleDrive: https://www.google.com/drive/ .",
           "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/personalstudy/",
@@ -720,7 +709,7 @@
   
 
   
-      ,"page14": {
+      ,"page13": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://deadshotlegend.github.io/Shivansh-Goel-Fast-Pages/robots.txt",
