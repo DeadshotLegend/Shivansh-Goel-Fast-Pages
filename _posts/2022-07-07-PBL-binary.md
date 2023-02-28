@@ -7,7 +7,7 @@ title: PBL Binary File
 ---
 
 {% assign BITS = 24 %}
-
+ 
 <div class="container bg-primary">
     <header class="pb-3 mb-4 border-bottom border-primary text-dark">
         <span class="fs-4">Binary Math with Conversions</span>
