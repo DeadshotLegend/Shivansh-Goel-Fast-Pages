@@ -1,6 +1,6 @@
 ---
 toc: true
-base: post
+layout: base
 description: Blogging the changes which happened during the theme change
 categories: [markdown, Week 2]
 title: Reporting theme changes

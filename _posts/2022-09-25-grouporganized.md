@@ -1,6 +1,6 @@
 ---
 toc: true
-base: post
+layout: base
 description: Group PLanning
 categories: [markdown, Week 4]
 title: Brainstorm - Week 5

@@ -1,6 +1,6 @@
 ---
 toc: true
-base: post
+layout: base
 description: The 3 quizes
 categories: [markdown, Week 7]
 title: ProjectPLanning

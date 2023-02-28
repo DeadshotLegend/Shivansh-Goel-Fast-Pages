@@ -1,6 +1,6 @@
 ---
 toc: true
-base: post
+layout: base
 description: Extra Credit for 12/14/2022
 categories: [markdown, Week 13]
 title: Extra Credit for 12/13/2022

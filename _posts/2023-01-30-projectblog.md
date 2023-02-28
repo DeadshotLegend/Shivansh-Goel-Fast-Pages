@@ -1,6 +1,6 @@
 ---
 toc: true
-base: post
+layout: base
 description: Project Blog Review
 categories: [markdown, Week 13]
 title: Project Blog Review

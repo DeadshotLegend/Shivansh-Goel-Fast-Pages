@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: base
 title: APCSP Vocabulary
 permalink: /b-vocab/
 categories: [pages]

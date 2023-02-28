@@ -1,6 +1,6 @@
 ---
 toc: true
-base: post
+layout: base
 description: Second Mark Down Post for APCSP
 categories: [markdown, Week 1]
 title: Shivansh's personalized page

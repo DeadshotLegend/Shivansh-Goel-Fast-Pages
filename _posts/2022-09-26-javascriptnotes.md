@@ -1,6 +1,6 @@
 ---
 toc: true
-base: post
+layout: base
 description: What we learned this week
 categories: [markdown, Week 5]
 title: JavascriptNotes Colloboration

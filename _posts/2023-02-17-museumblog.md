@@ -1,6 +1,6 @@
 ---
 toc: true
-base: post
+layout: base
 description: Museum Blog
 categories: [markdown, Week 20]
 title: Final Museum Blog
