@@ -828,33 +828,20 @@ Scaled size:  (320, 240)
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
-
-<span class="c1"># Load the image</span>
 <span class="n">image</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">&#39;images/marble-goddess.jpg&#39;</span><span class="p">)</span>
-
 <span class="n">image</span><span class="o">.</span><span class="n">info</span><span class="p">[</span><span class="s1">&#39;Title&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Masterpiece in the Air&#39;</span>
 <span class="n">image</span><span class="o">.</span><span class="n">info</span><span class="p">[</span><span class="s1">&#39;Author&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Vardaan Sinha&#39;</span>
 <span class="n">image</span><span class="o">.</span><span class="n">info</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;2018&#39;</span>
-
 <span class="n">img_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
-
 <span class="n">binary_pixels</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">unpackbits</span><span class="p">(</span><span class="n">img_array</span><span class="p">,</span> <span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
-
 <span class="n">hex_pixels</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">apply_along_axis</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">hex</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="n">x</span><span class="p">)),</span> <span class="mi">2</span><span class="p">))[</span><span class="mi">2</span><span class="p">:]</span><span class="o">.</span><span class="n">zfill</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">binary_pixels</span><span class="p">)</span>
-
 <span class="n">black_image</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">img_array</span><span class="p">)</span>
-
 <span class="n">black_image</span><span class="p">[:,</span> <span class="p">:,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">black_image</span><span class="p">[:,</span> <span class="p">:,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
-
 <span class="n">new_image</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">fromarray</span><span class="p">(</span><span class="n">black_image</span><span class="p">)</span>
-
 <span class="n">new_image</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">&#39;images/marble-goddess.jpg&#39;</span><span class="p">)</span>
-
 <span class="n">resized_image</span> <span class="o">=</span> <span class="n">new_image</span><span class="o">.</span><span class="n">resize</span><span class="p">((</span><span class="n">new_image</span><span class="o">.</span><span class="n">width</span> <span class="o">//</span> <span class="mi">4</span><span class="p">,</span> <span class="n">new_image</span><span class="o">.</span><span class="n">height</span> <span class="o">//</span> <span class="mi">4</span><span class="p">))</span>
-
 <span class="nb">print</span><span class="p">(</span><span class="n">image</span><span class="o">.</span><span class="n">info</span><span class="p">)</span>
-
 <span class="n">resized_image</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 
